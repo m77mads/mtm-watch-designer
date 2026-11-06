@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>MTM — صمّم ساعتك الخليجية</title>
+<title>معاليك — صمّم ساعتك</title>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
@@ -264,7 +264,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
 
 <!-- NAV (shared) -->
 <nav>
-  <div class="nav-logo" onclick="goPage('landing')">MTM</div>
+  <div class="nav-logo" onclick="goPage('landing')">معاليك</div>
   <button class="nav-back" id="navBack" onclick="goPage('landing')">← رجوع للرئيسية</button>
   <button class="nav-waio" onclick="openWA()">📲 واتساب</button>
 </nav>
@@ -276,14 +276,14 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
 
   <section class="hero">
     <div class="hero-glow"></div>
-    <div class="eyebrow">Gulf Collection 2026</div>
+    <div class="eyebrow">MAALIK · One of One</div>
     <h1 class="hero-title">
       ساعتك<br><span class="outline">هويتك</span>
     </h1>
     <p class="hero-sub">
-      صمّم ساعتك الخليجية بنفسك —<br>
+      ارسم فكرة ساعتك بنفسك —<br>
       اختر المينا، أضف كلمتك، ارفع شعارك.<br>
-      كل ساعة تُصنع خصيصاً لك.
+      ونحوّلها لقطعة واحدة تُصنع لك وحدك.
     </p>
 
     <div class="watch-pair">
@@ -302,7 +302,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
         <span class="ic">←</span>
         صمّم ساعتك الآن
       </button>
-      <span class="cta-note">مجاناً · بدون تسجيل · التسليم ٧–١٠ أيام</span>
+      <span class="cta-note">التصميم مجاني · بدون تسجيل · التسليم خلال شهر من اعتماد التصميم</span>
     </div>
   </section>
 
@@ -334,13 +334,13 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
 
   <section class="bottom">
     <h2>جاهز تبدأ؟</h2>
-    <p>التصميم مجاني — تدفع فقط عند إتمام الطلب</p>
+    <p>التصميم مجاني — وبعده نرسل لك رسومات أولية وسعر واضح قبل أي دفع</p>
     <button class="btn-cta" onclick="goPage('editor')">
       <span class="ic">←</span> ابدأ التصميم الآن
     </button>
   </section>
 
-  <footer><b>MTM</b> &nbsp;·&nbsp; الكويت — السالمية &nbsp;·&nbsp; تراث يُرسم على معصمك</footer>
+  <footer><b>معاليك</b> &nbsp;·&nbsp; الكويت &nbsp;·&nbsp; ساعة واحدة. لك وحدك. &nbsp;·&nbsp; واتساب 99395020</footer>
 </div>
 
 <!-- ══════════════════════════════
@@ -656,7 +656,7 @@ function sendB(){IO.layer=0;draw()}
 function rmImg(){IO.img=null;IO.vis=false;document.getElementById('imgCtrls').classList.remove('show');draw()}
 
 function openWA(){
-  var msg=encodeURIComponent('طلب تخصيص ساعة MTM\n\nالقالب: '+S.templateName+'\nلون المينا: '+S.dialColorName+'\nالنص: '+(TO.text||'—')+'\n\nأريد طلب هذه الساعة');
+  var msg=encodeURIComponent('طلب تصميم ساعة من معاليك\n\nالقالب: '+S.templateName+'\nلون المينا: '+S.dialColorName+'\nالنص: '+(TO.text||'—')+'\n\nأبغى أحجز جلسة تصميم لهذي الساعة');
   window.open('https://wa.me/96599395020?text='+msg,'_blank');
 }
 function dlCanvas(){
@@ -672,7 +672,7 @@ function dlCanvas(){
   if(TO.vis) drawTO();
   if(IO.vis&&IO.layer===1) drawIO();
   var link=document.createElement('a');
-  link.download='MTM-Watch-Design.png';
+  link.download='Maalik-Watch-Design.png';
   link.href=canvas.toDataURL('image/png');
   link.click();
   setTimeout(draw,100);
