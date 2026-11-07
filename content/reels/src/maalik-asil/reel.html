@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="fonts/local.css">
+<style>
+  :root { --gold:#C9A84C; --gold2:#E9CF83; --ink:#141210; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:1080px; height:1920px; overflow:hidden; background:#000; }
+  #stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:#000; font-family:'Tajawal',sans-serif; }
+  svg.layer { position:absolute; inset:0; width:1080px; height:1920px; }
+  .scene { position:absolute; inset:0; opacity:0; }
+  .card { position:absolute; left:0; right:0; top:330px; display:flex; flex-direction:column; align-items:center; gap:22px; opacity:0; }
+  .tag { background:var(--gold); color:#1a1408; font-weight:700; font-size:40px; padding:10px 30px 14px; border-radius:16px; }
+  .pill { background:rgba(14,12,10,.86); color:#fff; font-weight:800; font-size:76px; line-height:1.25; padding:18px 44px 28px; border-radius:26px; text-align:center; max-width:900px; }
+  .pill .g { color:var(--gold2); }
+  .sub { background:rgba(14,12,10,.78); color:#cfc8bb; font-weight:400; font-size:40px; padding:10px 28px 16px; border-radius:14px; text-align:center; max-width:860px; }
+  .logo { position:absolute; left:0; right:0; top:520px; text-align:center; opacity:0; }
+  .logo .ar { font-family:'Amiri',serif; font-weight:700; font-size:230px; color:var(--gold); line-height:1; }
+  .logo .lat { margin-top:10px; display:flex; align-items:center; justify-content:center; gap:28px; color:var(--gold); font-family:'Tajawal'; font-size:36px; letter-spacing:14px; direction:ltr; }
+  .logo .lat i { display:block; width:120px; height:2px; background:var(--gold); opacity:.7; }
+  .cta { position:absolute; left:0; right:0; top:1000px; display:flex; flex-direction:column; align-items:center; gap:24px; opacity:0; }
+  .cta .big { color:#fff; font-weight:800; font-size:92px; }
+  .cta .big b { color:var(--gold2); }
+  .cta .small { color:#cfc8bb; font-size:46px; }
+  .bignum { position:absolute; left:0; right:0; text-align:center; font-weight:800; color:var(--gold); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <!-- shared horse path -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <path id="horse" d="M300 105 L318 40 L338 100 L360 48 L376 112 C450 135 520 225 548 360 C562 440 572 520 576 600 L430 600 C412 520 398 440 374 348 C360 395 335 425 300 424 C270 423 248 410 222 418 C205 424 188 430 172 428 C150 425 136 412 136 396 C136 380 144 370 150 362 C170 335 182 318 190 300 C226 265 250 224 262 175 C272 148 288 125 300 105 Z"/>
+      <path id="horseDetail" d="M368 352 C340 330 300 332 284 354 M150 406 C160 409 168 410 178 408 M251 205 a9 9 0 1 0 18 0 a9 9 0 1 0 -18 0 M158 374 c6 -7 15 -7 20 0 M394 122 C432 152 472 212 492 302 M412 120 C457 162 497 232 514 332 M430 122 C478 170 518 246 532 350"/>
+      <linearGradient id="goldg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F3DD9A"/><stop offset=".5" stop-color="#C9A84C"/><stop offset="1" stop-color="#8C6B23"/>
+      </linearGradient>
+      <radialGradient id="vign" cx=".5" cy=".45" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".75"/></radialGradient>
+    </defs>
+  </svg>
+
+  <!-- S1 hook: gallop dust + 1893 -->
+  <div class="scene" id="s1">
+    <svg class="layer" viewBox="0 0 1080 1920">
+      <rect width="1080" height="1920" fill="#0b0805"/>
+      <text id="s1num" x="540" y="1180" text-anchor="middle" font-family="Tajawal" font-weight="800" font-size="420" fill="#C9A84C" fill-opacity=".13">١٨٩٣</text>
+      <g id="s1dust"></g>
+      <g id="s1horse"><use href="#horse" fill="url(#goldg)"/><use href="#horseDetail" fill="none" stroke="#3a2a0c" stroke-width="5" stroke-linecap="round"/></g>
+      <rect width="1080" height="1920" fill="url(#vign)"/>
+    </svg>
+  </div>
+
+  <!-- S2 battle: sunset dunes -->
+  <div class="scene" id="s2">
+    <svg class="layer" viewBox="0 0 1080 1920">
+      <defs><linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a0f08"/><stop offset=".55" stop-color="#b8461a"/><stop offset=".75" stop-color="#f0a34a"/></linearGradient></defs>
+      <rect width="1080" height="1920" fill="url(#sky2)"/>
+      <circle id="s2sun" cx="540" cy="1250" r="210" fill="#ffd27a" fill-opacity=".9"/>
+      <path id="s2d1" d="M-200 1380 C 100 1300 300 1330 520 1290 C 760 1250 960 1320 1300 1280 L1300 1920 L-200 1920Z" fill="#5c2410"/>
+      <g id="s2horse"><use href="#horse" fill="#1a0a05"/></g>
+      <path id="s2d2" d="M-200 1520 C 150 1440 380 1500 600 1460 C 820 1420 1000 1480 1300 1450 L1300 1920 L-200 1920Z" fill="#2b0f06"/>
+      <g id="s2dust"></g>
+      <rect width="1080" height="1920" fill="url(#vign)"/>
+    </svg>
+  </div>
+
+  <!-- S3 same land: night -->
+  <div class="scene" id="s3">
+    <svg class="layer" viewBox="0 0 1080 1920">
+      <defs><linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#03050d"/><stop offset="1" stop-color="#14203a"/></linearGradient></defs>
+      <rect width="1080" height="1920" fill="url(#sky3)"/>
+      <g id="s3stars"></g>
+      <path d="M840 860 a100 100 0 1 0 0.1 0 Z" fill="#f4e6b8"/><circle cx="884" cy="842" r="94" fill="#0b1226"/>
+      <g id="s3horse" opacity=".6"><use href="#horse" fill="none" stroke="#E9CF83" stroke-width="5"/><use href="#horseDetail" fill="none" stroke="#E9CF83" stroke-width="3" stroke-linecap="round"/></g>
+      <path d="M-200 1500 C 200 1420 420 1470 640 1430 C 860 1390 1000 1450 1300 1420 L1300 1920 L-200 1920Z" fill="#0a0f1c"/>
+      <rect width="1080" height="1920" fill="url(#vign)"/>
+    </svg>
+  </div>
+
+  <!-- S4 champion 7 -->
+  <div class="scene" id="s4">
+    <svg class="layer" viewBox="0 0 1080 1920">
+      <rect width="1080" height="1920" fill="#0b0805"/>
+      <g id="s4rays" transform="translate(540 1150)"></g>
+      <circle cx="540" cy="1150" r="300" fill="#0b0805" stroke="url(#goldg)" stroke-width="6"/>
+      <text id="s4num" x="540" y="1150" text-anchor="middle" dominant-baseline="central" font-family="Tajawal" font-weight="800" font-size="460" fill="url(#goldg)">٧</text>
+      <rect width="1080" height="1920" fill="url(#vign)"/>
+    </svg>
+  </div>
+
+  <!-- S5 inspiration: sketch on paper -->
+  <div class="scene" id="s5">
+    <svg class="layer" viewBox="0 0 1080 1920">
+      <rect width="1080" height="1920" fill="#efe6d2"/>
+      <g stroke="#cbbd9c" stroke-width="1.5" opacity=".6" id="s5grid"></g>
+      <g id="s5horse" transform="translate(220 840) scale(1.1)">
+        <use href="#horse" fill="none" stroke="#2a2016" stroke-width="5" pathLength="1" id="s5stroke" stroke-dasharray="1" stroke-dashoffset="1"/>
+        <use href="#horseDetail" id="s5jaw" fill="none" stroke="#2a2016" stroke-width="4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+        <circle id="s5eye" cx="260" cy="205" r="7" fill="#2a2016" opacity="0"/>
+      </g>
+      <rect width="1080" height="1920" fill="url(#vign)" opacity=".5"/>
+    </svg>
+  </div>
+
+  <!-- S6-S8 dial / hands / watch (one scene with camera) -->
+  <div class="scene" id="s6">
+    <svg class="layer" viewBox="0 0 1080 1920">
+      <defs>
+        <radialGradient id="dialg" cx=".45" cy=".4" r=".7"><stop offset="0" stop-color="#fbf7ee"/><stop offset="1" stop-color="#e3dccb"/></radialGradient>
+        <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset=".45" stop-color="#9a9a9a"/><stop offset=".55" stop-color="#d9d9d9"/><stop offset="1" stop-color="#6d6d6d"/></linearGradient>
+        <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+        <clipPath id="dialclip"><circle cx="0" cy="0" r="330"/></clipPath>
+      </defs>
+      <rect width="1080" height="1920" fill="#0d0b09" id="s6bg"/>
+      <g id="cam">
+        <g id="strap" opacity="0">
+          <rect x="-190" y="-900" width="380" height="560" rx="40" fill="#151210"/>
+          <rect x="-190" y="340" width="380" height="560" rx="40" fill="#151210"/>
+          <g stroke="#3a322a" stroke-width="4" stroke-dasharray="14 12"><line x1="-160" y1="-880" x2="-160" y2="-360"/><line x1="160" y1="-880" x2="160" y2="-360"/><line x1="-160" y1="360" x2="-160" y2="880"/><line x1="160" y1="360" x2="160" y2="880"/></g>
+        </g>
+        <g id="case" opacity="0">
+          <rect x="-230" y="-430" width="80" height="120" rx="18" fill="url(#steel)"/><rect x="150" y="-430" width="80" height="120" rx="18" fill="url(#steel)"/>
+          <rect x="-230" y="310" width="80" height="120" rx="18" fill="url(#steel)"/><rect x="150" y="310" width="80" height="120" rx="18" fill="url(#steel)"/>
+          <circle r="380" fill="url(#steel)"/><circle r="352" fill="#222"/>
+          <rect x="372" y="-34" width="56" height="68" rx="10" fill="url(#steel)"/>
+        </g>
+        <g id="dial">
+          <circle r="345" fill="url(#dialg)"/>
+          <g id="ticks"></g>
+          <g id="nums" font-family="Tajawal" font-weight="700" font-size="58" fill="#1d1a16" text-anchor="middle" dominant-baseline="central"></g>
+          <g id="emblem" transform="translate(-142 -170) scale(0.42)"><use href="#horse" fill="url(#goldg)"/><use href="#horseDetail" fill="none" stroke="#f3ecdc" stroke-width="6" stroke-linecap="round"/></g>
+          <text id="dialname" x="0" y="150" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="54" fill="#8C6B23">الأصيل</text>
+          <g id="hands">
+            <g id="hHour"><path d="M-9 30 L-6 -150 L0 -175 L6 -150 L9 30 Z" fill="#1d3f8f"/></g>
+            <g id="hMin"><path d="M-7 36 L-5 -245 L0 -275 L5 -245 L7 36 Z" fill="#1d3f8f"/></g>
+            <circle r="16" fill="#1d3f8f"/><circle r="6" fill="#d9d9d9"/>
+          </g>
+          <g clip-path="url(#dialclip)"><rect id="sweepbar" x="-700" y="-400" width="260" height="800" fill="url(#sweep)" transform="rotate(20)"/></g>
+        </g>
+      </g>
+      <rect width="1080" height="1920" fill="url(#vign)"/>
+    </svg>
+  </div>
+
+  <!-- S9 logo -->
+  <div class="scene" id="s9" style="background:#050403">
+    <div class="logo" id="logo"><div class="ar">معاليك</div><div class="lat"><i></i>MA'ALIK<i></i></div></div>
+    <div class="cta" id="cta"><div class="big">اكتب «<b>أصيل</b>» بالتعليقات</div><div class="small">ونرسلك تفاصيل ساعتك</div></div>
+  </div>
+
+  <!-- text cards -->
+  <div class="card" id="c1"><div class="tag">قطعة وحدة بالعالم</div><div class="pill">سنة ١٨٩٣..<br>خيل <span class="g">حسمت</span> معركة</div></div>
+  <div class="card" id="c2"><div class="pill">معركة الشقب</div><div class="sub">فرسان الشيخ جاسم على خيل عربية</div></div>
+  <div class="card" id="c3"><div class="pill">على نفس الأرض..<br>بيت الخيل</div><div class="sub">مركز الشقب — من ١٩٩٢</div></div>
+  <div class="card" id="c4"><div class="pill">بطل العالم <span class="g">٧</span> مرات</div><div class="sub">بطولة باريس لجمال الخيل العربية</div></div>
+  <div class="card" id="c5"><div class="pill">١. الإلهام</div><div class="sub">رأس الأصيل وعنقه المقوّس</div></div>
+  <div class="card" id="c6"><div class="pill">٢. المينا</div><div class="sub">خيل ذهبي وأرقام عربية</div></div>
+  <div class="card" id="c7"><div class="pill">٣. ركبنا العقارب..<br><span class="g">ملّي ملّي</span></div></div>
+  <div class="card" id="c8"><div class="pill">خيل <span class="g">حسمت</span> معركة..<br>على معصمك</div></div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const AR = ['١٢','١','٢','٣','٤','٥','٦','٧','٨','٩','١٠','١١'];
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const ease=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;};
+const eOut=x=>1-Math.pow(1-clamp(x),3);
+// seeded random
+let seed=7; const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};
+
+// build static pieces
+(function build(){
+  const ns='http://www.w3.org/2000/svg';
+  const mk=(tag,attrs,parent)=>{const e=document.createElementNS(ns,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);parent.appendChild(e);return e;};
+  window.dust1=[];for(let i=0;i<140;i++){dust1.push({y:300+rnd()*1500,s:.4+rnd()*1.6,r:1.5+rnd()*5,o:.2+rnd()*.7,x0:rnd()*1400,el:mk('circle',{fill:'#E9CF83'},$('s1dust'))});}
+  window.dust2=[];for(let i=0;i<90;i++){dust2.push({y:1250+rnd()*600,s:.3+rnd()*1,r:2+rnd()*6,o:.15+rnd()*.5,x0:rnd()*1400,el:mk('circle',{fill:'#ffd9a0'},$('s2dust'))});}
+  window.stars=[];for(let i=0;i<160;i++){stars.push({ph:rnd()*6.28,el:mk('circle',{cx:rnd()*1080,cy:rnd()*1350,r:.8+rnd()*2.6,fill:'#fff'},$('s3stars'))});}
+  for(let i=0;i<36;i++){const a=i*10;mk('path',{d:'M-14 0 L14 0 L4 -820 L-4 -820Z',fill:'#C9A84C',opacity:i%2?.10:.22,transform:`rotate(${a})`},$('s4rays'));}
+  for(let x=0;x<=1080;x+=60)mk('line',{x1:x,y1:0,x2:x,y2:1920},$('s5grid'));for(let y=0;y<=1920;y+=60)mk('line',{x1:0,y1:y,x2:1080,y2:y},$('s5grid'));
+  for(let i=0;i<60;i++){const a=i*6*Math.PI/180,big=i%5==0;const r1=big?318:326,r2=338;mk('line',{x1:Math.sin(a)*r1,y1:-Math.cos(a)*r1,x2:Math.sin(a)*r2,y2:-Math.cos(a)*r2,stroke:'#1d1a16','stroke-width':big?5:2},$('ticks'));}
+  AR.forEach((n,i)=>{const a=i*30*Math.PI/180;const t=mk('text',{x:Math.sin(a)*262,y:-Math.cos(a)*262},$('nums'));t.textContent=n;});
+})();
+
+// scene windows [start,end]
+const S={s1:[0,2.6],s2:[2.6,5.0],s3:[5.0,7.6],s4:[7.6,10.2],s5:[10.2,12.8],s6:[12.8,20.6],s9:[20.6,22.6]};
+const C={c1:[0.0,2.6],c2:[2.75,5.0],c3:[5.15,7.6],c4:[7.75,10.2],c5:[10.35,12.8],c6:[12.95,15.4],c7:[15.55,18.0],c8:[18.15,20.6]};
+const XF=.3;
+function vis(t,[a,b],first){ if(t<a-XF||t>b+XF) return 0; const i=first&&a===0?1:eOut((t-a+XF)/XF); const o=t<b?1:1-clamp((t-b)/XF); return Math.min(i,o); }
+
+window.render=function(t){
+  for(const k in S) $(k).style.opacity = vis(t,S[k],true);
+  for(const k in C){ const [a,b]=C[k]; const el=$(k);
+    let o = a===0 ? (t<b?1:1-clamp((t-b)/.2)) : (t<a?0:(t<b?eOut((t-a)/.25):1-clamp((t-b)/.2)));
+    el.style.opacity=o; const y = a===0?0:(1-eOut((t-a)/.3))*40; el.style.transform=`translateY(${y}px)`; }
+
+  // S1: gallop — horse slides in from right with bob, dust streaks left
+  { const p=t/2.6; const bob=Math.sin(t*14)*10;
+    $('s1horse').setAttribute('transform',`translate(${700-eOut(p*1.6)*520} ${700+bob}) scale(1.35)`);
+    $('s1num').setAttribute('x', 540+ (1-p)*60);
+    dust1.forEach(d=>{const x=((d.x0 - t*900*d.s)%1400+1400)%1400-160; d.el.setAttribute('cx',x); d.el.setAttribute('cy',d.y+Math.sin(t*3+d.x0)*8); d.el.setAttribute('r',d.r); d.el.setAttribute('opacity',d.o);}); }
+  // S2: sunset, horse silhouette rising, dust
+  { const p=clamp((t-2.3)/3); $('s2sun').setAttribute('cy',1260-p*60);
+    $('s2horse').setAttribute('transform',`translate(${250-p*40} ${720-eOut(p)*40}) scale(1.25)`);
+    $('s2d1').setAttribute('transform',`translate(${-p*40} 0)`); $('s2d2').setAttribute('transform',`translate(${-p*90} 0)`);
+    dust2.forEach(d=>{const x=((d.x0 - t*260*d.s)%1400+1400)%1400-160; d.el.setAttribute('cx',x); d.el.setAttribute('cy',d.y); d.el.setAttribute('r',d.r); d.el.setAttribute('opacity',d.o);}); }
+  // S3: night, stars twinkle, slow push in
+  { const p=clamp((t-4.7)/3.2); stars.forEach(s=>s.el.setAttribute('opacity',.35+.65*Math.abs(Math.sin(t*1.7+s.ph))));
+    $('s3horse').setAttribute('transform',`translate(${300-p*30} ${780-p*20}) scale(${0.95+p*.08})`); }
+  // S4: rays rotate, 7 scales in
+  { const p=clamp((t-7.6)/2.6); $('s4rays').setAttribute('transform',`translate(540 1150) rotate(${t*12})`);
+    const s=.6+.4*eOut(p*2.2); $('s4num').setAttribute('transform',`translate(540 1150) scale(${s}) translate(-540 -1150)`); }
+  // S5: line drawing
+  { const p=clamp((t-10.3)/2.0); $('s5stroke').setAttribute('stroke-dashoffset',1-ease(p));
+    $('s5jaw').setAttribute('stroke-dashoffset',1-ease(clamp((p-.6)/.3))); $('s5eye').setAttribute('opacity',clamp((p-.85)/.15)); }
+  // S6-S8: dial macro -> hands -> full watch
+  { let sc, ty, rot=0;
+    if(t<15.4){ const p=clamp((t-12.8)/2.6); sc=2.1-0.5*ease(p); ty=1150; }
+    else if(t<18.0){ sc=1.6; ty=1150; }
+    else { const p=clamp((t-18.0)/1.6); sc=1.6-0.55*ease(p); ty=1150+40*ease(p); rot=-6*ease(p); }
+    $('cam').setAttribute('transform',`translate(540 ${ty}) rotate(${rot}) scale(${sc})`);
+    const showCase=clamp((t-17.9)/.6); $('case').setAttribute('opacity',showCase); $('strap').setAttribute('opacity',showCase);
+    $('emblem').setAttribute('opacity',clamp((t-13.3)/.8));
+    // hands: spin in during 15.4-17.6 and settle at 10:10
+    const hp=ease(clamp((t-15.4)/2.0)); const H=-60+ (1-hp)*-300, M=60+(1-hp)*540;
+    $('hHour').setAttribute('transform',`rotate(${t<15.4? -60-300 : H})`); $('hMin').setAttribute('transform',`rotate(${t<15.4? 60+540 : M})`);
+    $('hands').setAttribute('opacity', t<15.2?0:clamp((t-15.2)/.3));
+    const sw=clamp((t-18.4)/1.6); $('sweepbar').setAttribute('x',-700+sw*1300);
+  }
+  // S9: logo + cta
+  { const p=clamp((t-20.7)/.5); $('logo').style.opacity=p; $('logo').style.transform=`translateY(${(1-eOut(p))*30}px)`;
+    const q=clamp((t-21.1)/.4); $('cta').style.opacity=q; $('cta').style.transform=`translateY(${(1-eOut(q))*30}px)`; }
+};
+render(0);
+</script>
+</body>
+</html>
