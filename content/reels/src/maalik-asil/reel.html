@@ -6,8 +6,8 @@
 <style>
   :root { --gold:#C9A84C; --gold2:#E9CF83; --ink:#141210; }
   * { margin:0; padding:0; box-sizing:border-box; }
-  html,body { width:1080px; height:1920px; overflow:hidden; background:#000; }
-  #stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:#000; font-family:'Tajawal',sans-serif; }
+  html,body { width:1080px; height:1920px; overflow:hidden; background:transparent; }
+  #stage { position:relative; width:1080px; height:1920px; overflow:hidden; background:transparent; font-family:'Tajawal',sans-serif; }
   svg.layer { position:absolute; inset:0; width:1080px; height:1920px; }
   .scene { position:absolute; inset:0; opacity:0; }
   .card { position:absolute; left:0; right:0; top:330px; display:flex; flex-direction:column; align-items:center; gap:22px; opacity:0; }
@@ -169,6 +169,7 @@
     <div class="cta" id="cta"><div class="big">اكتب «<b>أصيل</b>» بالتعليقات</div><div class="small">ونرسلك تفاصيل ساعتك</div></div>
   </div>
 
+  <div id="shade" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 38%,rgba(0,0,0,0) 75%,rgba(0,0,0,.35) 100%);opacity:0"></div>
   <!-- text cards -->
   <div class="card" id="c1"><div class="tag">قطعة وحدة بالعالم</div><div class="pill">سنة ١٨٩٣..<br>خيل <span class="g">حسمت</span> معركة</div></div>
   <div class="card" id="c2"><div class="pill">معركة الشقب</div><div class="sub">فرسان الشيخ جاسم على خيل عربية</div></div>
@@ -209,7 +210,7 @@ const XF=.3;
 function vis(t,[a,b],first){ if(t<a-XF||t>b+XF) return 0; const i=first&&a===0?1:eOut((t-a+XF)/XF); const o=t<b?1:1-clamp((t-b)/XF); return Math.min(i,o); }
 
 window.render=function(t){
-  for(const k in S) $(k).style.opacity = vis(t,S[k],true);
+  const FOOT=['s1','s2','s3','s4']; for(const k in S) $(k).style.opacity = FOOT.includes(k)?0:vis(t,S[k],true); $('shade').style.opacity = t<10.2?1:1-clamp((t-10.2)/.3);
   for(const k in C){ const [a,b]=C[k]; const el=$(k);
     let o = a===0 ? (t<b?1:1-clamp((t-b)/.2)) : (t<a?0:(t<b?eOut((t-a)/.25):1-clamp((t-b)/.2)));
     el.style.opacity=o; const y = a===0?0:(1-eOut((t-a)/.3))*40; el.style.transform=`translateY(${y}px)`; }
