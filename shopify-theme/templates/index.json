@@ -143,21 +143,24 @@
           "type": "collection_block",
           "settings": {
             "collection": "our-watches",
-            "title": "ساعاتنا"
+            "title": "ساعاتنا",
+            "item_image": "shopify://shop_images/download_e37208ea-3c8d-4eac-8ddb-acf7f6531480.jpg"
           }
         },
         "block_limited": {
           "type": "collection_block",
           "settings": {
             "collection": "limited-editions",
-            "title": "الإصدارات المحدودة"
+            "title": "الإصدارات المحدودة",
+            "item_image": "shopify://shop_images/WhatsApp_Image_2026-02-23_at_5.56.31_AM_26_8fe864b6-1ff6-44a8-8f61-939ff02d32e7.jpg"
           }
         },
         "block_custom": {
           "type": "collection_block",
           "settings": {
             "collection": "custom-watches",
-            "title": "صمّم ساعتك ✨"
+            "title": "صمّم ساعتك ✨",
+            "item_image": "shopify://shop_images/1E17174C-FB5A-48B5-980B-2BBD05E01A4D.jpg"
           }
         }
       },
