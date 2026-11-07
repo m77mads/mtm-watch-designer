@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="fonts/local.css">
+<style>
+  :root { --gold:#C9A84C; --gold2:#E9CF83; --mtm:#FFE600; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body,#stage { width:1080px; height:1920px; overflow:hidden; background:transparent; }
+  #stage { position:relative; font-family:'Tajawal',sans-serif; }
+  #shade { position:absolute; inset:0; background:linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 38%,rgba(0,0,0,0) 75%,rgba(0,0,0,.35) 100%); }
+  .card { position:absolute; left:0; right:0; display:flex; flex-direction:column; align-items:center; gap:22px; opacity:0; }
+  .tag { background:var(--accent); color:#1a1408; font-weight:700; font-size:40px; padding:10px 30px 14px; border-radius:16px; }
+  .pill { background:rgba(14,12,10,.86); color:#fff; font-weight:800; font-size:76px; line-height:1.25; padding:18px 44px 28px; border-radius:26px; text-align:center; max-width:960px; }
+  .pill .g { color:var(--accent2); }
+  .sub { background:rgba(14,12,10,.78); color:#cfc8bb; font-weight:400; font-size:40px; padding:10px 28px 16px; border-radius:14px; text-align:center; max-width:900px; }
+  #end { position:absolute; inset:0; background:#050403; opacity:0; }
+  .logo { position:absolute; left:0; right:0; top:520px; text-align:center; }
+  .logo.maalik .ar { font-family:'Amiri',serif; font-weight:700; font-size:230px; color:var(--gold); line-height:1; }
+  .logo .lat { margin-top:10px; display:flex; align-items:center; justify-content:center; gap:28px; color:var(--gold); font-size:36px; letter-spacing:14px; direction:ltr; }
+  .logo .lat i { display:block; width:120px; height:2px; background:var(--gold); opacity:.7; }
+  .logo.mtm .box { display:inline-block; background:var(--mtm); color:#000; font-weight:800; font-size:170px; padding:30px 70px 40px; letter-spacing:6px; direction:ltr; }
+  .cta { position:absolute; left:0; right:0; top:1000px; display:flex; flex-direction:column; align-items:center; gap:24px; }
+  .cta .big { color:#fff; font-weight:800; font-size:92px; }
+  .cta .big b { color:var(--accent2); }
+  .cta .small { color:#cfc8bb; font-size:46px; }
+</style>
+</head>
+<body>
+<div id="stage"><div id="shade"></div><div id="cards"></div><div id="end"></div></div>
+<script>
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eOut=x=>1-Math.pow(1-clamp(x),3);
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+// "**word**" -> accent colour, "\n" -> line break
+const fmt=s=>esc(s).replace(/\*\*(.+?)\*\*/g,'<span class="g">$1</span>').replace(/\n/g,'<br>');
+
+window.setup=function(spec){
+  window.SPEC=spec;
+  const brand=spec.brand||'maalik';
+  const root=document.documentElement.style;
+  root.setProperty('--accent', brand==='mtm' ? '#FFE600' : '#C9A84C');
+  root.setProperty('--accent2', brand==='mtm' ? '#FFE600' : '#E9CF83');
+  const box=document.getElementById('cards');
+  spec.cards.forEach((c,i)=>{
+    const d=document.createElement('div'); d.className='card'; d.id='c'+i; d.style.top=(c.top||330)+'px';
+    d.innerHTML=(c.tag?`<div class="tag">${esc(c.tag)}</div>`:'')+`<div class="pill">${fmt(c.title)}</div>`+(c.sub?`<div class="sub">${esc(c.sub)}</div>`:'');
+    box.appendChild(d);
+  });
+  const e=spec.end;
+  const logo = brand==='mtm'
+    ? `<div class="logo mtm"><div class="box">MTM</div></div>`
+    : `<div class="logo maalik"><div class="ar">معاليك</div><div class="lat"><i></i>MA'ALIK<i></i></div></div>`;
+  document.getElementById('end').innerHTML = logo + `<div class="cta"><div class="big">اكتب «<b>${esc(e.cta)}</b>» بالتعليقات</div><div class="small">${esc(e.sub||'')}</div></div>`;
+};
+
+window.render=function(t){
+  const S=window.SPEC, endStart=S.shotsDur;
+  S.cards.forEach((c,i)=>{ const el=document.getElementById('c'+i);
+    const first=c.t0<=0.01;
+    let o = first ? (t<c.t1?1:1-clamp((t-c.t1)/.2)) : (t<c.t0?0:(t<c.t1?eOut((t-c.t0)/.25):1-clamp((t-c.t1)/.2)));
+    el.style.opacity=o; el.style.transform=`translateY(${first?0:(1-eOut((t-c.t0)/.3))*40}px)`; });
+  document.getElementById('shade').style.opacity = t<endStart?1:0;
+  const end=document.getElementById('end'); const p=clamp((t-endStart)/.35);
+  end.style.opacity=p;
+  const lg=end.querySelector('.logo'), cta=end.querySelector('.cta');
+  const a=clamp((t-endStart-.1)/.5), b=clamp((t-endStart-.5)/.4);
+  lg.style.opacity=a; lg.style.transform=`translateY(${(1-eOut(a))*30}px)`;
+  cta.style.opacity=b; cta.style.transform=`translateY(${(1-eOut(b))*30}px)`;
+};
+</script>
+</body>
+</html>
