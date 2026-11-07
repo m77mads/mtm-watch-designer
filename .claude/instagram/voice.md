@@ -8,10 +8,14 @@ are in Arabic where the wording matters.
 
 ## Who I am
 
-- **Name / brand:** MTM — متم (falcon logo, gold on black). Gift line shown in
-  some reels as **معاليك — MA'ALIK** (gold wordmark).
-  _To confirm: is معاليك a sub-brand of MTM or a separate account?_
-- **Handle:** {{your handle}}
+- **Two brands, two accounts:**
+  - **MTM — متم** · @mtm_so · falcon logo / yellow MTM wordmark · 30–100 د.ك ·
+    limited and open editions · store: mtmstore.net
+  - **معاليك — MA'ALIK** · @malek_gcc · gold wordmark · the premium line: a
+    whole watch designed from the customer's choices, **one of one — never
+    repeated** · 150–500 د.ك
+  - Never mix them in one reel. MTM = editions and national/heritage designs;
+    معاليك = a single bespoke piece and the story of the person it was made for.
 - **What I do, in one sentence:** نصمم ونركّب ساعات مخصّصة بالكويت: مينا
   بتصميمك، عقارب، وحفر إهداء بالليزر — نسخة وحدة بالعالم.
 - **Who I am talking to:** people in Kuwait looking for a meaningful gift
@@ -100,11 +104,11 @@ are in Arabic where the wording matters.
   مينا خاص بزيادة ٢٠ د.ك — التوصيل مجاني داخل الكويت.
 - Sizes: ٣٢ مم (نسائي)، ٣٦ مم (رجالي ونسائي — الخيار الأسلم)، ٤٠ مم (رجالي).
   Wrist guide: تحت ١٥ سم → ٣٢ · من ١٥ إلى ١٧ → ٣٦ · فوق ١٧ → ٤٠.
-- {{orders delivered / customer count — only if you want to share it}}
+- **أكثر من ١٠٠٠ زبون فعلي** (MTM).
 
 ## The ask
 
 - **Keyword CTA:** one Arabic word in «» + «بالتعليقات». Matches the reel:
   صمم (default) · تخرج · ترقية · سكلتون · نخلة · شمس.
 - **What the keyword sends them:** «ونرسلك خطوات تصميم ساعتك» (or the edition details).
-- **Where my link goes:** {{your link}}
+- **Where my link goes:** MTM → https://mtmstore.net · معاليك → {{link}}
