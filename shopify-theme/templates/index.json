@@ -28,8 +28,8 @@
             "button_text": "اكتشف المجموعة",
             "button_link": "shopify://collections/all",
             "button_style": "sf__btn-secondary",
-            "second_button_text": "✨ صمّم ساعتك",
-            "second_button_link": "https://m77mads.github.io/mtm-watch-designer/MTM_Watch_Designer.html",
+            "second_button_text": "معاليك ❖ ساعة لا تتكرر",
+            "second_button_link": "shopify://pages/maalik",
             "second_button_style": "m-button--primary",
             "show_footer": false,
             "enable_preload_image": true
@@ -98,8 +98,8 @@
             "alignment": "start",
             "align_text": "center",
             "text_size": "small",
-            "button_label": "✨ صمّم ساعتك الآن",
-            "button_link": "https://m77mads.github.io/mtm-watch-designer/MTM_Watch_Designer.html",
+            "button_label": "تسوّق ساعات MTM",
+            "button_link": "shopify://collections/our-watches",
             "button_style": "m-button--primary",
             "animations": "inherit"
           }
@@ -158,9 +158,9 @@
         "block_custom": {
           "type": "collection_block",
           "settings": {
-            "collection": "custom-watches",
-            "title": "صمّم ساعتك ✨",
-            "item_image": "shopify://shop_images/1E17174C-FB5A-48B5-980B-2BBD05E01A4D.jpg"
+            "collection": "ساعة-الوطن",
+            "title": "إصدارات الوطن",
+            "item_image": "shopify://shop_images/watan-kuwait.jpg"
           }
         }
       },
@@ -184,37 +184,6 @@
         "enable_slider": true,
         "show_navigation": true,
         "mobile_disable_slider": true,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "animations": "inherit"
-      }
-    },
-    "featured_collection_banner_z8Bwqe": {
-      "type": "featured-collection-banner",
-      "blocks": {
-        "image_card_XhPELC": {
-          "type": "image_card",
-          "settings": {
-            "image": "shopify://shop_images/1E17174C-FB5A-48B5-980B-2BBD05E01A4D.jpg",
-            "link": "https://m77mads.github.io/mtm-watch-designer/MTM_Watch_Designer.html",
-            "subtitle": "صمّم ساعتك بنفسك",
-            "title": "ختر اللون، النقش، الموديل",
-            "button_label": "✨ افتح المصمّم التفاعلي",
-            "button_style": "m-button--primary"
-          }
-        }
-      },
-      "block_order": [
-        "image_card_XhPELC"
-      ],
-      "settings": {
-        "heading": "صمّم ساعتك الخاصة",
-        "heading_size": "h3",
-        "description": "اختر الموديل، لون المينا، النقش — وشاهد ساعتك تتشكل أمامك.",
-        "header_alignment": "center",
-        "color_scheme": "footer",
-        "container": "container-fluid",
-        "collection": "custom-watches",
         "padding_top": 60,
         "padding_bottom": 60,
         "animations": "inherit"
@@ -312,13 +281,13 @@
         "image_column_size": "6",
         "image_overlap": true,
         "image": "shopify://shop_images/1E3D4587-124D-48F2-B986-B7C1662A4652.jpg",
-        "link": "https://m77mads.github.io/mtm-watch-designer/MTM_Watch_Designer.html",
-        "title": "ساعات شخصية بهدف",
-        "text": "<p>كل ساعة MTM تحمل هويتك. من لون الميناء إلى النقش بالليزر — كل تفصيل مقصود.</p>",
+        "link": "shopify://pages/maalik",
+        "title": "تبي ساعة ما لها نسخة ثانية؟",
+        "text": "<p>التصميم الكامل حسب اختيارك صار في <strong>معاليك</strong> — ساعة One of One تُصنع مرة وحدة بس، من ١٥٠ د.ك.</p>",
         "text_size": "medium",
         "content_alignment": "left",
-        "button_label": "✨ جرّب المصمّم الآن",
-        "button_link": "https://m77mads.github.io/mtm-watch-designer/MTM_Watch_Designer.html",
+        "button_label": "اكتشف معاليك ❖",
+        "button_link": "shopify://pages/maalik",
         "button_style": "m-button--primary",
         "padding_top": 50,
         "padding_bottom": 50,
@@ -344,14 +313,6 @@
             "footer": "<p>سارة ع. — الكويت</p>"
           }
         },
-        "t3": {
-          "type": "testimonial",
-          "settings": {
-            "title": "تصميم يعكس هويتي",
-            "description": "<p>المصمم التفاعلي شيء آخر! جربت ألوان مختلفة وشفت شكل الساعة قبل ما أطلب. وصل بتغليف فاخر وشهادة أصالة.</p>",
-            "footer": "<p>فهد ر. — السعودية</p>"
-          }
-        },
         "t4": {
           "type": "testimonial",
           "settings": {
@@ -364,7 +325,6 @@
       "block_order": [
         "t1",
         "t2",
-        "t3",
         "t4"
       ],
       "custom_css": [
@@ -394,7 +354,6 @@
     "7ea56e8d-5794-4708-8812-8ee9604a3a21",
     "featured_collection_HpahUn",
     "16225316461d1cff80",
-    "featured_collection_banner_z8Bwqe",
     "empty_space_hHWKRY",
     "scrolling_promotion_ddzkaJ",
     "empty_space_YCBr7E",
