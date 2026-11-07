@@ -31,8 +31,28 @@
   <!-- shared horse path -->
   <svg width="0" height="0" style="position:absolute">
     <defs>
-      <path id="horse" d="M300 105 L318 40 L338 100 L360 48 L376 112 C450 135 520 225 548 360 C562 440 572 520 576 600 L430 600 C412 520 398 440 374 348 C360 395 335 425 300 424 C270 423 248 410 222 418 C205 424 188 430 172 428 C150 425 136 412 136 396 C136 380 144 370 150 362 C170 335 182 318 190 300 C226 265 250 224 262 175 C272 148 288 125 300 105 Z"/>
-      <path id="horseDetail" d="M368 352 C340 330 300 332 284 354 M150 406 C160 409 168 410 178 408 M251 205 a9 9 0 1 0 18 0 a9 9 0 1 0 -18 0 M158 374 c6 -7 15 -7 20 0 M394 122 C432 152 472 212 492 302 M412 120 C457 162 497 232 514 332 M430 122 C478 170 518 246 532 350"/>
+      <path id="horse" d="M322 104 C316 84 320 62 334 42 C342 60 348 82 348 104 C356 90 366 74 382 60 C384 84 378 106 370 124 C380 140 390 160 396 186 C408 254 436 318 470 360 C486 380 492 404 484 424 C476 442 460 450 444 454 C428 458 412 456 400 448 C386 440 372 428 356 418 C334 404 310 388 296 368 C288 358 284 348 284 338 C262 380 248 440 252 510 C256 590 300 690 380 800 C300 776 190 776 110 800 C128 690 140 590 148 480 C156 380 176 300 210 230 C240 166 278 120 322 104 Z"/>
+      <path id="mane" d="M318 102 C262 104 214 138 184 200 C210 168 254 144 306 132 Z M300 128 C236 146 188 206 164 290 C190 236 232 196 290 170 Z M282 166 C214 196 170 266 150 366 C176 300 216 250 272 212 Z M262 212 C196 254 160 334 144 444 C168 370 200 310 252 264 Z M238 266 C180 316 154 404 146 516 C166 430 190 364 230 318 Z"/>
+      <path id="horseDetail" d="M304 240 C276 292 290 362 354 404 M446 442 C434 438 422 440 412 446 M350 108 C362 128 368 152 364 174 M342 110 C350 130 352 152 346 170"/>
+      <path id="horseFeat" d="M366 206 a20 13 18 1 0 40 12 a20 13 18 1 0 -40 -12 Z M462 396 C472 384 488 390 488 404 C482 416 466 414 462 396 Z"/>
+      <clipPath id="hclip"><use href="#horse"/></clipPath>
+      <radialGradient id="muz" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#1a1006" stop-opacity=".85"/><stop offset="1" stop-color="#1a1006" stop-opacity="0"/></radialGradient>
+      <radialGradient id="eyesh" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#2a1a08" stop-opacity=".55"/><stop offset="1" stop-color="#2a1a08" stop-opacity="0"/></radialGradient>
+      <radialGradient id="neckglow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6d8" stop-opacity=".38"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/></radialGradient>
+      <linearGradient id="neckhi" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff6d8" stop-opacity="0"/><stop offset=".5" stop-color="#fff6d8" stop-opacity=".45"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/></linearGradient>
+      <g id="horseRich">
+        <use href="#mane" fill="#7a5c1e"/>
+        <use href="#horse" fill="url(#goldg)"/>
+        <g clip-path="url(#hclip)">
+          <ellipse cx="462" cy="418" rx="86" ry="74" fill="url(#muz)"/>
+          <ellipse cx="388" cy="214" rx="44" ry="32" fill="url(#eyesh)"/>
+          <ellipse cx="205" cy="560" rx="46" ry="250" fill="url(#neckglow)"/>
+          <path d="M300 250 C 300 320 330 380 380 410" stroke="#fff6d8" stroke-opacity=".22" stroke-width="22" fill="none"/>
+        </g>
+        <use href="#horseDetail" fill="none" stroke="#3a2a0c" stroke-width="4" stroke-linecap="round"/>
+        <use href="#horseFeat" fill="#140c04"/>
+        <circle cx="392" cy="208" r="4" fill="#f3dd9a"/>
+      </g>
       <linearGradient id="goldg" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0" stop-color="#F3DD9A"/><stop offset=".5" stop-color="#C9A84C"/><stop offset="1" stop-color="#8C6B23"/>
       </linearGradient>
@@ -46,7 +66,7 @@
       <rect width="1080" height="1920" fill="#0b0805"/>
       <text id="s1num" x="540" y="1180" text-anchor="middle" font-family="Tajawal" font-weight="800" font-size="420" fill="#C9A84C" fill-opacity=".13">١٨٩٣</text>
       <g id="s1dust"></g>
-      <g id="s1horse"><use href="#horse" fill="url(#goldg)"/><use href="#horseDetail" fill="none" stroke="#3a2a0c" stroke-width="5" stroke-linecap="round"/></g>
+      <g id="s1horse"><use href="#horseRich"/></g>
       <rect width="1080" height="1920" fill="url(#vign)"/>
     </svg>
   </div>
@@ -58,7 +78,7 @@
       <rect width="1080" height="1920" fill="url(#sky2)"/>
       <circle id="s2sun" cx="540" cy="1250" r="210" fill="#ffd27a" fill-opacity=".9"/>
       <path id="s2d1" d="M-200 1380 C 100 1300 300 1330 520 1290 C 760 1250 960 1320 1300 1280 L1300 1920 L-200 1920Z" fill="#5c2410"/>
-      <g id="s2horse"><use href="#horse" fill="#1a0a05"/></g>
+      <g id="s2horse"><use href="#mane" fill="#1a0a05"/><use href="#horse" fill="#1a0a05"/></g>
       <path id="s2d2" d="M-200 1520 C 150 1440 380 1500 600 1460 C 820 1420 1000 1480 1300 1450 L1300 1920 L-200 1920Z" fill="#2b0f06"/>
       <g id="s2dust"></g>
       <rect width="1080" height="1920" fill="url(#vign)"/>
@@ -72,7 +92,7 @@
       <rect width="1080" height="1920" fill="url(#sky3)"/>
       <g id="s3stars"></g>
       <path d="M840 860 a100 100 0 1 0 0.1 0 Z" fill="#f4e6b8"/><circle cx="884" cy="842" r="94" fill="#0b1226"/>
-      <g id="s3horse" opacity=".6"><use href="#horse" fill="none" stroke="#E9CF83" stroke-width="5"/><use href="#horseDetail" fill="none" stroke="#E9CF83" stroke-width="3" stroke-linecap="round"/></g>
+      <g id="s3horse" opacity=".7"><use href="#mane" fill="none" stroke="#E9CF83" stroke-width="3"/><use href="#horse" fill="none" stroke="#E9CF83" stroke-width="5"/><use href="#horseDetail" fill="none" stroke="#E9CF83" stroke-width="3" stroke-linecap="round"/><use href="#horseFeat" fill="#E9CF83"/></g>
       <path d="M-200 1500 C 200 1420 420 1470 640 1430 C 860 1390 1000 1450 1300 1420 L1300 1920 L-200 1920Z" fill="#0a0f1c"/>
       <rect width="1080" height="1920" fill="url(#vign)"/>
     </svg>
@@ -94,10 +114,10 @@
     <svg class="layer" viewBox="0 0 1080 1920">
       <rect width="1080" height="1920" fill="#efe6d2"/>
       <g stroke="#cbbd9c" stroke-width="1.5" opacity=".6" id="s5grid"></g>
-      <g id="s5horse" transform="translate(220 840) scale(1.1)">
+      <g id="s5horse" transform="translate(200 760) scale(1.1)">
         <use href="#horse" fill="none" stroke="#2a2016" stroke-width="5" pathLength="1" id="s5stroke" stroke-dasharray="1" stroke-dashoffset="1"/>
         <use href="#horseDetail" id="s5jaw" fill="none" stroke="#2a2016" stroke-width="4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
-        <circle id="s5eye" cx="260" cy="205" r="7" fill="#2a2016" opacity="0"/>
+        <use href="#horseFeat" id="s5eye" fill="#2a2016" opacity="0"/><use href="#mane" id="s5mane" fill="none" stroke="#2a2016" stroke-width="3" opacity="0"/>
       </g>
       <rect width="1080" height="1920" fill="url(#vign)" opacity=".5"/>
     </svg>
@@ -129,8 +149,8 @@
           <circle r="345" fill="url(#dialg)"/>
           <g id="ticks"></g>
           <g id="nums" font-family="Tajawal" font-weight="700" font-size="58" fill="#1d1a16" text-anchor="middle" dominant-baseline="central"></g>
-          <g id="emblem" transform="translate(-142 -170) scale(0.42)"><use href="#horse" fill="url(#goldg)"/><use href="#horseDetail" fill="none" stroke="#f3ecdc" stroke-width="6" stroke-linecap="round"/></g>
-          <text id="dialname" x="0" y="150" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="54" fill="#8C6B23">الأصيل</text>
+          <g id="emblem" transform="translate(-90 -190) scale(0.30)"><use href="#horseRich"/></g>
+          <text id="dialname" x="0" y="190" text-anchor="middle" font-family="Amiri" font-weight="700" font-size="54" fill="#8C6B23">الأصيل</text>
           <g id="hands">
             <g id="hHour"><path d="M-9 30 L-6 -150 L0 -175 L6 -150 L9 30 Z" fill="#1d3f8f"/></g>
             <g id="hMin"><path d="M-7 36 L-5 -245 L0 -275 L5 -245 L7 36 Z" fill="#1d3f8f"/></g>
@@ -196,23 +216,23 @@ window.render=function(t){
 
   // S1: gallop — horse slides in from right with bob, dust streaks left
   { const p=t/2.6; const bob=Math.sin(t*14)*10;
-    $('s1horse').setAttribute('transform',`translate(${700-eOut(p*1.6)*520} ${700+bob}) scale(1.35)`);
+    $('s1horse').setAttribute('transform',`translate(${640-eOut(p*1.6)*480} ${640+bob}) scale(1.35)`);
     $('s1num').setAttribute('x', 540+ (1-p)*60);
     dust1.forEach(d=>{const x=((d.x0 - t*900*d.s)%1400+1400)%1400-160; d.el.setAttribute('cx',x); d.el.setAttribute('cy',d.y+Math.sin(t*3+d.x0)*8); d.el.setAttribute('r',d.r); d.el.setAttribute('opacity',d.o);}); }
   // S2: sunset, horse silhouette rising, dust
   { const p=clamp((t-2.3)/3); $('s2sun').setAttribute('cy',1260-p*60);
-    $('s2horse').setAttribute('transform',`translate(${250-p*40} ${720-eOut(p)*40}) scale(1.25)`);
+    $('s2horse').setAttribute('transform',`translate(${190-p*40} ${640-eOut(p)*40}) scale(1.25)`);
     $('s2d1').setAttribute('transform',`translate(${-p*40} 0)`); $('s2d2').setAttribute('transform',`translate(${-p*90} 0)`);
     dust2.forEach(d=>{const x=((d.x0 - t*260*d.s)%1400+1400)%1400-160; d.el.setAttribute('cx',x); d.el.setAttribute('cy',d.y); d.el.setAttribute('r',d.r); d.el.setAttribute('opacity',d.o);}); }
   // S3: night, stars twinkle, slow push in
   { const p=clamp((t-4.7)/3.2); stars.forEach(s=>s.el.setAttribute('opacity',.35+.65*Math.abs(Math.sin(t*1.7+s.ph))));
-    $('s3horse').setAttribute('transform',`translate(${300-p*30} ${780-p*20}) scale(${0.95+p*.08})`); }
+    $('s3horse').setAttribute('transform',`translate(${250-p*30} ${700-p*20}) scale(${0.95+p*.08})`); }
   // S4: rays rotate, 7 scales in
   { const p=clamp((t-7.6)/2.6); $('s4rays').setAttribute('transform',`translate(540 1150) rotate(${t*12})`);
     const s=.6+.4*eOut(p*2.2); $('s4num').setAttribute('transform',`translate(540 1150) scale(${s}) translate(-540 -1150)`); }
   // S5: line drawing
   { const p=clamp((t-10.3)/2.0); $('s5stroke').setAttribute('stroke-dashoffset',1-ease(p));
-    $('s5jaw').setAttribute('stroke-dashoffset',1-ease(clamp((p-.6)/.3))); $('s5eye').setAttribute('opacity',clamp((p-.85)/.15)); }
+    $('s5jaw').setAttribute('stroke-dashoffset',1-ease(clamp((p-.6)/.3))); $('s5eye').setAttribute('opacity',clamp((p-.85)/.15)); $('s5mane').setAttribute('opacity',clamp((p-.7)/.3)); }
   // S6-S8: dial macro -> hands -> full watch
   { let sc, ty, rot=0;
     if(t<15.4){ const p=clamp((t-12.8)/2.6); sc=2.1-0.5*ease(p); ty=1150; }
