@@ -1,0 +1,364 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1621243260e1af0c20": {
+      "type": "slider",
+      "blocks": {
+        "1621243260e1af0c20-0": {
+          "type": "slider_item",
+          "settings": {
+            "background": "shopify://shop_images/FBD0CFF5-75AD-476C-A7E8-069789ABDD10.jpg",
+            "mb_background": "shopify://shop_images/7844161A-A7E3-4F90-B16C-89A8BBAA4FF0.jpg",
+            "content_in_container": false,
+            "content_position": "center bottom",
+            "text_alignment": "center",
+            "text_size": "medium",
+            "text_color": "white",
+            "subheading": "أكثر من ١٠٠٠ زبون يلبسون MTM",
+            "title": "MTM — حيث يُصنع الوقت",
+            "description": "<p>ساعات مستوحاة من هوية الخليج، مصنوعة لمن يعرف قيمة التفاصيل.</p>",
+            "button_text": "اكتشف المجموعة",
+            "button_link": "shopify://collections/all",
+            "button_style": "sf__btn-secondary",
+            "second_button_text": "معاليك ❖ ساعة لا تتكرر",
+            "second_button_link": "shopify://pages/maalik",
+            "second_button_style": "m-button--primary",
+            "show_footer": false,
+            "enable_preload_image": true
+          }
+        }
+      },
+      "block_order": [
+        "1621243260e1af0c20-0"
+      ],
+      "settings": {
+        "container": "w-full",
+        "slideshow_height": "fullscreen",
+        "show_overlay": true,
+        "show_dots": true,
+        "show_arrows": false,
+        "autorotate": false,
+        "use_content_above": true,
+        "custom_class": "sf-home__slideshow",
+        "animations": "inherit"
+      }
+    },
+    "scrolling_promotion_jjrFyf": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_LqzGfW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/A99F20EB-447D-4050-9D7A-30BCD20C4161.jpg",
+            "image_height": 50
+          }
+        },
+        "announcement_w3tNiH": {
+          "type": "announcement",
+          "settings": {
+            "text": "🚚 توصيل مجاني داخل الكويت | ✦ إصدارات محدودة — ١٠٠ قطعة فقط | 🎁 تغليف فاخر مع كل طلب | ⭐ أكثر من ١٠٠٠ زبون",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_LqzGfW",
+        "announcement_w3tNiH"
+      ],
+      "custom_css": [
+        ".m-scrolling-promotion-section {border-width: 1px 0 1px 0; border-color: rgb(var(--color-border));}"
+      ],
+      "settings": {
+        "container": "w-full",
+        "direction": "left",
+        "speed": 11,
+        "item_gap": 80,
+        "color_scheme": "dark",
+        "padding_top": 26,
+        "padding_bottom": 26
+      }
+    },
+    "7ea56e8d-5794-4708-8812-8ee9604a3a21": {
+      "type": "custom-content",
+      "blocks": {
+        "text_e4AfGL": {
+          "type": "text",
+          "settings": {
+            "title": "لم نبنِ متجراً للساعات",
+            "text": "<p>في إم تي إم، كل ساعة تُولد من تفصيل — لون يحمل هوية، خط يحكي أصلاً. هذا توقيعك على معصمك.</p>",
+            "width": "100%",
+            "alignment": "start",
+            "align_text": "center",
+            "text_size": "small",
+            "button_label": "تسوّق ساعات MTM",
+            "button_link": "shopify://collections/our-watches",
+            "button_style": "m-button--primary",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "text_e4AfGL"
+      ],
+      "settings": {
+        "container": "container",
+        "color_scheme": "footer",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading": ""
+      }
+    },
+    "featured_collection_HpahUn": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "ساعات MTM",
+        "heading_size": "h3",
+        "header_alignment": "left",
+        "container": "container-fluid",
+        "collection": "our-watches",
+        "product_to_show": 8,
+        "items_per_row": 4,
+        "item_gap": 30,
+        "show_button_on_header": true,
+        "button_text": "عرض الكل",
+        "button_style": "m-button--primary",
+        "mobile_disable_slider": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "animations": "inherit"
+      }
+    },
+    "16225316461d1cff80": {
+      "type": "collection-list",
+      "blocks": {
+        "block_kuwait": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "our-watches",
+            "title": "ساعاتنا",
+            "item_image": "shopify://shop_images/download_e37208ea-3c8d-4eac-8ddb-acf7f6531480.jpg"
+          }
+        },
+        "block_limited": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "limited-editions",
+            "title": "الإصدارات المحدودة",
+            "item_image": "shopify://shop_images/WhatsApp_Image_2026-02-23_at_5.56.31_AM_26_8fe864b6-1ff6-44a8-8f61-939ff02d32e7.jpg"
+          }
+        },
+        "block_custom": {
+          "type": "collection_block",
+          "settings": {
+            "collection": "ساعة-الوطن",
+            "title": "إصدارات الوطن",
+            "item_image": "shopify://shop_images/watan-kuwait.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_kuwait",
+        "block_limited",
+        "block_custom"
+      ],
+      "custom_css": [
+        ".m-collection-card__title {font-weight: 400;}"
+      ],
+      "settings": {
+        "heading": "تسوق حسب الفئة",
+        "heading_size": "h3",
+        "description": "اختر المجموعة التي تعكس هويتك.",
+        "header_alignment": "center",
+        "color_scheme": "footer",
+        "container": "container-fluid",
+        "items_per_row": 3,
+        "item_gap": 40,
+        "enable_slider": true,
+        "show_navigation": true,
+        "mobile_disable_slider": true,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "animations": "inherit"
+      }
+    },
+    "empty_space_hHWKRY": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "show_divider_line": true,
+        "divider_height": 3,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "scrolling_promotion_ddzkaJ": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "image_3MKfEC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/A99F20EB-447D-4050-9D7A-30BCD20C4161.jpg",
+            "image_height": 50
+          }
+        },
+        "announcement_RArNek": {
+          "type": "announcement",
+          "settings": {
+            "text": "✨ ضمان أصالة 100% | 📦 تغليف فاخر | ⭐ أكثر من ١٠٠٠ زبون | 🎨 تخصيص كامل",
+            "text_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_3MKfEC",
+        "announcement_RArNek"
+      ],
+      "settings": {
+        "container": "w-full",
+        "direction": "left",
+        "speed": 11,
+        "item_gap": 80,
+        "color_scheme": "default",
+        "padding_top": 26,
+        "padding_bottom": 26
+      }
+    },
+    "empty_space_YCBr7E": {
+      "type": "empty-space",
+      "settings": {
+        "container": "container-fluid",
+        "show_divider_line": true,
+        "divider_height": 3,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_content_btgYN3": {
+      "type": "custom-content",
+      "blocks": {
+        "lookbook_XVdfNy": {
+          "type": "lookbook",
+          "settings": {
+            "width": "100%",
+            "image": "shopify://shop_images/8E4BF22F-DE1D-4922-9A5C-F769FCBDFC18.png",
+            "top_1": 50,
+            "left_1": 52,
+            "product_1": "model-1-40mm",
+            "block_custom_class": "m-block-first",
+            "animations": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_XVdfNy"
+      ],
+      "custom_css": [
+        ".m-custom-content__wrapper,.m-block-first {position: relative; z-index: 1;}"
+      ],
+      "settings": {
+        "heading": "تسوق حسب المظهر",
+        "heading_size": "h3",
+        "header_alignment": "center",
+        "container": "container-fluid",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_NDfegp": {
+      "type": "image-with-text",
+      "settings": {
+        "container": "container-fluid",
+        "item_gap": 100,
+        "layout": "right",
+        "image_column_size": "6",
+        "image_overlap": true,
+        "image": "shopify://shop_images/1E3D4587-124D-48F2-B986-B7C1662A4652.jpg",
+        "link": "shopify://pages/maalik",
+        "title": "تبي ساعة ما لها نسخة ثانية؟",
+        "text": "<p>التصميم الكامل حسب اختيارك صار في <strong>معاليك</strong> — ساعة One of One تُصنع مرة وحدة بس، من ١٥٠ د.ك.</p>",
+        "text_size": "medium",
+        "content_alignment": "left",
+        "button_label": "اكتشف معاليك ❖",
+        "button_link": "shopify://pages/maalik",
+        "button_style": "m-button--primary",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "animations": "inherit"
+      }
+    },
+    "testimonials_pnyUnX": {
+      "type": "testimonials",
+      "blocks": {
+        "t1": {
+          "type": "testimonial",
+          "settings": {
+            "title": "ساعة اليوم الوطني 🇰🇼",
+            "description": "<p>طلبت ساعة اليوم الوطني بنقش اسمي — جاءت أحلى من توقعي. التفاصيل فاخرة والتوصيل خلال أسبوع. شكراً MTM ❤️</p>",
+            "footer": "<p>عبدالله م. — الكويت</p>"
+          }
+        },
+        "t2": {
+          "type": "testimonial",
+          "settings": {
+            "title": "هدية مميزة جداً",
+            "description": "<p>اشتريت ساعة بوابة الكويت هدية لأبوي. لما شافها ما شاف ساعة بهذا التصميم قبل. 5 نجوم ⭐⭐⭐⭐⭐</p>",
+            "footer": "<p>سارة ع. — الكويت</p>"
+          }
+        },
+        "t4": {
+          "type": "testimonial",
+          "settings": {
+            "title": "جودة فوق التوقعات",
+            "description": "<p>كنت متردد في البداية لكن بعد ما وصل ندمت إني ما طلبت بدري. زجاج سفير، معدن، كل شيء يحس بالفخامة. طلبي الثاني في الطريق 😄</p>",
+            "footer": "<p>محمد ك. — الكويت</p>"
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t4"
+      ],
+      "custom_css": [
+        ".m-svg-icon {width: 12px; height: 12px;}",
+        ".m-stars {column-gap: 2px;}"
+      ],
+      "settings": {
+        "heading": "ماذا يقول عملاؤنا",
+        "heading_size": "h3",
+        "header_alignment": "left",
+        "container": "container-fluid",
+        "color_scheme": "scheme-cee058e4-58e3-46aa-9af9-219dadc79066",
+        "design": "testimonials-6",
+        "show_stars": true,
+        "autorotate": true,
+        "show_navigation": true,
+        "star_color": "#C9A84C",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "1621243260e1af0c20",
+    "scrolling_promotion_jjrFyf",
+    "7ea56e8d-5794-4708-8812-8ee9604a3a21",
+    "featured_collection_HpahUn",
+    "16225316461d1cff80",
+    "empty_space_hHWKRY",
+    "scrolling_promotion_ddzkaJ",
+    "empty_space_YCBr7E",
+    "custom_content_btgYN3",
+    "image_with_text_NDfegp",
+    "testimonials_pnyUnX"
+  ]
+}

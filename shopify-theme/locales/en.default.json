@@ -1,0 +1,525 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "general": {
+    "404": {
+      "title": "عذراً!",
+      "button": "رجوع للرئيسية",
+      "subtext": "الصفحة غير موجودة"
+    },
+    "accessibility": {
+      "unit_price_separator": "per",
+      "error": "Error",
+      "link_messages": {
+        "new_window": "Opens in a new window."
+      },
+      "close_header": "Close header",
+      "close": "إغلاق"
+    },
+    "meta": {
+      "tags": "Tagged \"{{ tags }}\"",
+      "page": "Page {{ page }}"
+    },
+    "time": {
+      "days": "days",
+      "hrs": "hrs",
+      "hours": "hours",
+      "mins": "mins",
+      "minutes": "minutes",
+      "secs": "secs",
+      "seconds": "seconds"
+    },
+    "breadcrumbs": {
+      "home": "الرئيسية",
+      "home_link_title": "رجوع للرئيسية"
+    },
+    "password_page": {
+      "opening_soon": "Opening Soon"
+    },
+    "social": {},
+    "search": {
+      "title": "ابحث في المتجر",
+      "placeholder": "ابحث عن ساعة",
+      "placeholder_short": "بحث",
+      "popular_searches": "الأكثر بحثاً",
+      "results_for": "نتائج البحث عن",
+      "more_results": "نتائج أكثر",
+      "heading": {
+        "one": "Search result: \"{{ terms }}\"",
+        "other": "Search results: \"{{ terms }}\""
+      },
+      "results_with_count": {
+        "one": "Found {{ count }} result for \"{{ terms }}\"",
+        "other": "Found {{ count }} results for \"{{ terms }}\""
+      },
+      "no_results": "لا توجد نتائج لـ",
+      "no_results_html": "Please try a different search term or go back to the <a href=\"/\">homepage</a>.",
+      "suggestions": "اقتراحات",
+      "page_article": "صفحات ومقالات",
+      "products": "المنتجات"
+    },
+    "newsletter_form": {
+      "confirmation": "شكراً لاشتراكك"
+    },
+    "payment": {
+      "options": "طرق الدفع"
+    },
+    "notifications": {
+      "item_added": "انضافت الساعة للسلة",
+      "required_field": "عبّ كل الحقول المطلوبة (*) قبل الإضافة للسلة"
+    },
+    "foxkit": {
+      "add": "Add"
+    },
+    "tooltip": {
+      "not_found": "Tooltip type not found"
+    }
+  },
+  "sections": {
+    "video": {
+      "play": "Play"
+    },
+    "collection_template": {
+      "from": "من",
+      "to": "إلى",
+      "product_count": {
+        "one": "عرض {{ product_count }} من {{ count }} منتج",
+        "other": "عرض {{ product_count }} من {{ count }} منتج"
+      }
+    },
+    "slider": {
+      "video": {
+        "notice": "Your browser does not support the video tag."
+      }
+    },
+    "lookbook": {
+      "shop_this_look": {
+        "popup": {
+          "title": "تسوّق هذا الستايل",
+          "product_title": "Example Product Title"
+        }
+      }
+    },
+    "quick_order_list": {
+      "view_cart": "View cart",
+      "total_items": "Total items",
+      "remove_all_items_confirmation": "Remove all {{ quantity }} items from your cart?",
+      "remove_all": "Remove all",
+      "cancel": "Cancel"
+    }
+  },
+  "blogs": {
+    "article": {
+      "by_author": "by",
+      "posted_in": "on",
+      "tags": "Tags:",
+      "read_more": "Read more",
+      "related_title": "Related Articles",
+      "next_post": "Next",
+      "previous_post": "Previous"
+    },
+    "comments": {
+      "title": "Leave a Comment",
+      "sub_title": "Your email address will not be published.",
+      "name": "Your Name*",
+      "email": "Your Email*",
+      "message": "Comment",
+      "post": "Submit Now",
+      "reply": "Reply",
+      "at_time": "at",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      }
+    }
+  },
+  "sidebar": {
+    "clear_all": "CLEAR ALL"
+  },
+  "cart": {
+    "general": {
+      "title": "سلة التسوق",
+      "remove": "حذف",
+      "note": "ملاحظات الطلب (مثلاً نص النقش)",
+      "drawer_note": "ملاحظة",
+      "shipping": "التوصيل",
+      "drawer_coupon": "كود خصم",
+      "subtotal": "المجموع",
+      "taxes_and_shipping_at_checkout": "يُحسب التوصيل عند الدفع",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+      "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "enter_discount_code": "أدخل كود الخصم",
+      "checkout": "إتمام الطلب",
+      "viewcart": "عرض السلة",
+      "empty": "سلتك فاضية حالياً.",
+      "coupon_title": "أضف كود خصم",
+      "estimate_shipping_title": "Estimate shipping rates",
+      "estimate_shipping_button": "Calculate",
+      "note_title": "أضف ملاحظة للطلب",
+      "cancel": "إلغاء",
+      "save": "حفظ",
+      "zipcode_validate": "Zip code can't be blank",
+      "shipping_rates_result": "We found {{count}} shipping rate(s) for your address",
+      "no_found_shipping_rate": "There are no shipping rates for your address.",
+      "recommend_title": "ممكن يعجبك",
+      "delivery_days": {
+        "one": "day",
+        "other": "days"
+      },
+      "gift_wrapping_html": "For {{ price }} please wrap the products in this order.",
+      "gift_note_placeholder": "رسالة الإهداء (مجانية واختيارية)",
+      "cart_error": "صار خطأ في تحديث السلة، حاول مرة ثانية.",
+      "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
+      "delivery_title": "التوصيل",
+      "delivery_time": "Delivery time",
+      "delivery_label": "Pick a delivery date:",
+      "delivery_error": "Please choose the current or future time."
+    },
+    "label": {
+      "product": "المنتج",
+      "price": "السعر",
+      "quantity": "الكمية",
+      "qty": "الكمية",
+      "total": "الإجمالي",
+      "regular_total": "Regular total",
+      "discounted_total": "Discounted total",
+      "product_details": "Product details",
+      "variant": "Variant"
+    }
+  },
+  "collections": {
+    "general": {
+      "no_matches": "ما في منتجات في هذه المجموعة حالياً",
+      "collection_items": "{{ title }} items"
+    },
+    "sidebar": {
+      "clear_all": "مسح الكل"
+    },
+    "toolbar": {
+      "show_filter": "تصفية",
+      "view_layout": "العرض",
+      "view_list": "List",
+      "grid_2cloumns": "2 columns",
+      "grid_3cloumns": "3 columns",
+      "grid_4cloumns": "4 columns",
+      "grid_5cloumns": "5 columns"
+    },
+    "sorting": {
+      "title": "ترتيب حسب"
+    },
+    "paginate": {
+      "load_more": "عرض المزيد"
+    }
+  },
+  "contact": {
+    "form": {
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "message": "رسالتك",
+      "send": "إرسال",
+      "post_success": "شكراً لتواصلك، بنرد عليك بأسرع وقت.",
+      "save_infor_message": "Save my name, email, and website in this browser for the next time I comment."
+    },
+    "ask-form": {
+      "heading": "Ask a Question",
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone Number",
+      "message": "Your Message",
+      "required-fields": "Required fields",
+      "send": "Submit Now",
+      "post_success": "Thanks for asking. We'll get back to you as soon as possible."
+    }
+  },
+  "customer": {
+    "account": {
+      "title": "حسابي",
+      "page_title": "Account",
+      "dashboard": "Dashboard",
+      "addresses": "Addresses",
+      "wishlist": "Wishlist",
+      "log_out": "تسجيل خروج",
+      "details": "Account Details",
+      "name": "Name",
+      "email": "Email",
+      "view_addresses": "View Addresses",
+      "return": "Return to Account Details",
+      "greeting": "Hello",
+      "not": "not"
+    },
+    "activate_account": {
+      "title": "Activate Account",
+      "subtext": "Create your password to activate your account.",
+      "password": "Password",
+      "password_confirm": "Confirm Password",
+      "submit": "Activate Account",
+      "cancel": "Decline Invitation"
+    },
+    "addresses": {
+      "title": "Your Addresses",
+      "your_addresses": "Your Addresses",
+      "default": "Default Address",
+      "add_new": "Add a New Address",
+      "name": "Name",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "company": "Company",
+      "address1": "Address",
+      "address2": "Apartment, suite, etc.",
+      "city": "City",
+      "country": "Country",
+      "province": "Province",
+      "zip": "Postal/Zip Code",
+      "phone": "Phone",
+      "set_default": "Set as default address",
+      "update": "Update Address",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "delete": "Delete",
+      "delete_confirm": "Are you sure you wish to delete this address?"
+    },
+    "login": {
+      "title": "تسجيل الدخول",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "forgot_password": "نسيت كلمة المرور؟",
+      "sign_in": "دخول",
+      "new_customer": "زبون جديد",
+      "alternate_provider_separator": "or"
+    },
+    "orders": {
+      "title": "طلباتي",
+      "order_number": "Order",
+      "date": "Date",
+      "payment_status": "Payment Status",
+      "fulfillment_status": "Fulfillment Status",
+      "total": "Total",
+      "make_your_first_order": "Make your first order.",
+      "none": "ما عندك طلبات للحين."
+    },
+    "order": {
+      "title": "Order {{ name }}",
+      "date": "Placed on {{ date }}",
+      "cancelled": "Order Cancelled on {{ date }}",
+      "cancelled_reason": "Reason: {{ reason }}",
+      "billing_address": "Billing Address",
+      "fulfilled_at_html": "Fulfilled {{ date }}",
+      "payment_status": "Payment Status",
+      "shipping_address": "Shipping Address",
+      "fulfillment_status": "Fulfillment Status",
+      "discounts": "Discounts",
+      "shipping": "Shipping",
+      "tax": "Tax",
+      "product": "Product",
+      "sku": "SKU",
+      "price": "Price",
+      "quantity": "Quantity",
+      "total": "Total",
+      "track_shipment": "Track shipment",
+      "subtotal": "Subtotal",
+      "discount": "Discount"
+    },
+    "recover_password": {
+      "title": "Reset your password",
+      "email": "Email",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "subtext": "We will send you an email to reset your password.",
+      "success": "We've sent you an email with a link to update your password."
+    },
+    "reset_password": {
+      "title": "Reset account password",
+      "subtext": "Enter a new password for {{ email }}",
+      "password": "Password",
+      "password_confirm": "Confirm Password",
+      "submit": "Reset Password"
+    },
+    "register": {
+      "title": "حساب جديد",
+      "description": "Sign up for early Sale access plus tailored new arrivals, trends and promotions. To opt out, click unsubscribe in our emails.",
+      "first_name": "First Name",
+      "last_name": "Last Name"
+    }
+  },
+  "homepage": {
+    "onboarding": {
+      "blog_title": "Your post's title",
+      "blog_excerpt": "Your store hasn’t published any blog posts yet. A blog can be used to talk about new product launches, tips, or other news you want to share with your customers.",
+      "product_title": "Example Product Title",
+      "product_description": "This area is used to describe your product’s details. Tell customers about the look, feel, and style of your product. Add details on color, materials used, sizing, and where it was made.",
+      "collection_title": "Example Collection Title",
+      "collection_description": "Collection's description here that provides details about the collection.",
+      "no_content": "This section doesn’t currently include any content. Add content to this section using the sidebar.",
+      "blog_readmore": "Read more",
+      "blog_tag": "Minimog"
+    }
+  },
+  "layout": {
+    "back_to_shopping": "كمّل التسوق",
+    "back": "رجوع",
+    "wishlist": {
+      "title": "Wishlist",
+      "no_products": "No products were added to the wishlist page."
+    },
+    "compare": {
+      "title": "Compare",
+      "no_products": "No products were added to the compare page."
+    },
+    "cart": {
+      "title": "السلة"
+    },
+    "customer": {
+      "account": "الحساب",
+      "log_in": "دخول"
+    }
+  },
+  "pages": {
+    "find_a_store": "Find a Store"
+  },
+  "products": {
+    "product": {
+      "regular_price": "السعر",
+      "sold_out": "نفدت الكمية",
+      "availability": "Availability",
+      "brand": "Brand",
+      "colors": "Colors",
+      "in_stock": "متوفر",
+      "out_of_stock": "غير متوفر",
+      "low_stock": "كمية محدودة",
+      "backordered": "Backordered",
+      "unavailable": "غير متاح",
+      "on_sale": "خصم",
+      "from_text_html": "يبدأ من {{ price }}",
+      "quantity": "الكمية",
+      "add_to_cart": "أضف للسلة",
+      "add_to_wishlist": "Add to wishlist",
+      "remove_from_wishlist": "Remove from wishlist",
+      "add_to_compare": "Compare",
+      "add_a_question": "اسأل عن الساعة",
+      "remove_from_compare": "Remove from compare",
+      "quick_add": "إضافة سريعة",
+      "zoom_in": "تكبير",
+      "quick_view": "نظرة سريعة",
+      "collection": "Collection",
+      "decrease_quantity": "Decrease quantity of {{ title }} by one",
+      "increase_quantity": "Increase quantity of {{ title }} by one",
+      "quantity_input_label": "Quantity for {{ product }}",
+      "include_taxes": "شامل الضريبة.",
+      "price": {
+        "from_price_html": "يبدأ من {{ price }}",
+        "regular_price": "السعر",
+        "sale_price": "سعر الخصم",
+        "unit_price": "Unit price",
+        "save_price_html": "وفّر <span data-sale-value>{{ amount }}</span>"
+      },
+      "preorder": "Pre-order",
+      "product_quantity": "Product quantity",
+      "product_recommendation_heading": "ممكن يعجبك أيضاً",
+      "product_reviews_heading": "التقييمات",
+      "quantity_minimum_message": "Quantity must be 1 or more",
+      "not_enough_items_message": "الكمية غير كافية. باقي {{ quantity }} بس.",
+      "sale_price": "سعر الخصم",
+      "see_more_options": "See {{ count }} more option(s)",
+      "sold_out_items_message": "نفدت الكمية.",
+      "view_details": "عرض التفاصيل",
+      "vendor": "Vendor",
+      "type": "Type",
+      "sku": "SKU",
+      "collections": "Collections",
+      "social_share": "مشاركة",
+      "copy_link": "نسخ الرابط",
+      "unit_price_label": "Unit price",
+      "size_guide": "دليل المقاسات",
+      "save_html": "وفّر <span class=\"m-currency--saved m:font-medium\" data-saved-price>{{ amount }}</span>",
+      "recently_viewed_products": "شاهدتها مؤخراً",
+      "select_options": "اختر المواصفات",
+      "sold": "مُباع",
+      "available": "متوفر",
+      "xr_button": "View in your space",
+      "xr_button_label": "View in your space, loads item in augmented reality window",
+      "pickup_availability": {
+        "view_store_info": "View store information",
+        "check_other_stores": "Check availability at other stores",
+        "pick_up_available": "Pickup available",
+        "pick_up_available_at_html": "Pickup available at <span>{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Pickup currently unavailable at <span>{{ location_name }}</span>",
+        "unavailable": "Couldn't load pickup availability",
+        "refresh": "Refresh"
+      },
+      "select_variant": "اختر المواصفات قبل الإضافة للسلة.",
+      "preorder_note": "Preorder item",
+      "sale_text": "خصم",
+      "choose_an_option": "اختر",
+      "inventory_quantity_html": "<span class=\"m-product-inventory__quantity\">{{ quantity }}</span> In stock",
+      "inventory_low_quantity_html": "باقي <span class=\"m-product-inventory__quantity\">{{ quantity }}</span> بس",
+      "quantity_in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in cart",
+      "quantity_minimum_of": "Minimum of {{ quantity }}",
+      "quantity_maximum_of": "Maximum of {{ quantity }}",
+      "quantity_multiples_of": "Increments of {{ quantity }}",
+      "volume_pricing": {
+        "title": "Volume Pricing",
+        "note": "Volume pricing available",
+        "minimum": "{{ quantity }}+",
+        "price_at_each": "at {{ price }}/ea",
+        "price_range": "{{ minimum }} - {{ maximum }}",
+        "each": "{{ money }}/ea",
+        "price_at_each_html": "at {{ price }}/ea",
+        "price_range_html": "{{ minimum }} - {{ maximum }}",
+        "each_html": "{{ money }}/ea"
+      },
+      "variant_sold_out_or_unavailable": "هذا الخيار نفد أو غير متاح"
+    },
+    "facets": {
+      "show_more": "عرض المزيد"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Here's your {{ value }} gift card for {{ shop }}!",
+      "subtext": "Your gift card",
+      "gift_card_code": "Gift card code",
+      "shop_link": "Continue shopping",
+      "remaining_html": "Remaining {{ balance }}",
+      "add_to_apple_wallet": "Add to Apple Wallet",
+      "qr_image_alt": "QR code — scan to redeem gift card",
+      "copy_code": "Copy code",
+      "expired": "Expired",
+      "copy_code_success": "Code copied successfully",
+      "print_gift_card": "Print"
+    }
+  },
+  "date_formats": {
+    "month_day_year": "%B %d, %Y"
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "I want to send this as a gift",
+      "email_label": "Recipient email",
+      "email_label_optional": "Recipient email (optional)",
+      "email": "Email",
+      "name_label": "Recipient name (optional)",
+      "name": "Name",
+      "message_label": "Message (optional)",
+      "message": "Message",
+      "max_characters": "{{ max_chars }} characters max"
+    }
+  },
+  "templates": {
+    "contact": {
+      "form": {
+        "error_heading": "Please adjust the following:"
+      }
+    }
+  }
+}

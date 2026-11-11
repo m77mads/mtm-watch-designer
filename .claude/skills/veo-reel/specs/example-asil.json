@@ -1,0 +1,16 @@
+{
+  "brand": "maalik",
+  "shots": [
+    { "clip": "../../../../content/reels/src/maalik-asil/footage/gemini-herd-gallop.mp4",   "start": 0.0, "dur": 2.6 },
+    { "clip": "../../../../content/reels/src/maalik-asil/footage/gemini-herd-gallop.mp4",   "start": 6.2, "dur": 2.4, "grade": "warm" },
+    { "clip": "../../../../content/reels/src/maalik-asil/footage/gemini-horse-standing.mp4", "start": 0.2, "dur": 2.6 },
+    { "clip": "../../../../content/reels/src/maalik-asil/footage/gemini-horse-standing.mp4", "start": 4.4, "dur": 2.6 }
+  ],
+  "cards": [
+    { "t0": 0.0,  "t1": 2.6,  "tag": "قطعة وحدة بالعالم", "title": "سنة ١٨٩٣..\nخيل **حسمت** معركة" },
+    { "t0": 2.75, "t1": 5.0,  "title": "معركة الشقب", "sub": "فرسان الشيخ جاسم على خيل عربية" },
+    { "t0": 5.15, "t1": 7.6,  "title": "على نفس الأرض..\nبيت الخيل", "sub": "مركز الشقب — من ١٩٩٢" },
+    { "t0": 7.75, "t1": 10.2, "title": "بطل العالم **٧** مرات", "sub": "بطولة باريس لجمال الخيل العربية" }
+  ],
+  "end": { "dur": 2.4, "cta": "أصيل", "sub": "ونرسلك تفاصيل ساعتك" }
+}
