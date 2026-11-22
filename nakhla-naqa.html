@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>إصدار النخلة والناقة — معاليك</title>
+<meta name="description" content="نخلة وناقة على مينا بيضاء. إصدار من معاليك بشكلين: مربع ٤١ مم ومستطيل ٣٦ مم. يبدأ من ٥٠٠ د.ك.">
+<meta property="og:title" content="إصدار النخلة والناقة — معاليك">
+<meta property="og:description" content="نخلة وناقة على مينا بيضاء. إصدار من معاليك بشكلين: مربع ٤١ مم ومستطيل ٣٦ مم. يبدأ من ٥٠٠ د.ك.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/nakhla-square.jpg">
+<meta name="theme-color" content="#070707">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="maalik.js" defer></script>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:#faf8f3;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+.mk-nav{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #1f1c16;background:#070707;direction:rtl}
+.mk-nav a{color:#C9A84C;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:.3px}
+.mk-nav a[aria-current]{color:#F5EDD6}
+
+.nq{max-width:760px;margin:0 auto;padding:0 16px 40px;direction:rtl;text-align:right;color:#141210;line-height:1.85;font-family:inherit}
+.nq .tag{display:inline-block;background:#141210;color:#e8b33a;font-size:12px;font-weight:700;letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin-bottom:12px}
+.nq .lede{font-size:19px;color:#3d3830;margin:0 0 6px}
+.nq .sub{font-size:15px;color:#6b6459;margin:0 0 22px}
+.nq .step{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;margin:26px 0 12px}
+.nq .step b{background:#e8b33a;color:#141210;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.nq .models{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.nq .model{position:relative;border:2px solid #dcdcdc;border-radius:14px;overflow:hidden;background:#fff;cursor:pointer;transition:border-color .2s,box-shadow .2s;display:block}
+.nq .model input{position:absolute;opacity:0;pointer-events:none}
+.nq .model img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:#f2efe8}
+.nq .model .info{display:block;padding:12px 14px 14px}
+.nq .model .nm{font-weight:800;font-size:17px;display:block}
+.nq .model .sz{font-size:14px;color:#6b6459;display:block}
+.nq .model .pic{font-size:12px;color:#9a9285;display:block;margin-top:4px}
+.nq .model .chk{position:absolute;top:10px;left:10px;width:30px;height:30px;border-radius:50%;background:#e8b33a;color:#141210;font-weight:900;display:none;align-items:center;justify-content:center;font-size:17px}
+.nq .model.sel{border-color:#e8b33a;box-shadow:0 0 0 3px #e8b33a33}
+.nq .model.sel .chk{display:flex}
+.nq .straps{display:flex;gap:10px}
+.nq .strap{position:relative;flex:1;border:2px solid #dcdcdc;border-radius:12px;padding:14px 10px;text-align:center;cursor:pointer;background:#fff;font-weight:800;font-size:16px;transition:all .2s}
+.nq .strap input{position:absolute;opacity:0;pointer-events:none}
+.nq .strap small{display:block;font-weight:400;font-size:12.5px;color:#7a7266}
+.nq .strap.sel{border-color:#e8b33a;background:#fffaf0;box-shadow:0 0 0 3px #e8b33a33}
+.nq .story{border-right:3px solid #e8b33a;padding:4px 16px 4px 0;margin:28px 0 0;color:#3d3830}
+.nq .story p{margin:0 0 6px}
+.nq .box{background:#141210;color:#faf8f3;border-radius:14px;padding:24px 20px 22px;margin-top:14px}
+.nq .box .sum{background:#1f1c18;border:1px solid #3a352d;border-radius:9px;padding:10px 14px;font-size:14.5px;color:#e8b33a;margin:0 0 16px}
+.nq .fld{margin-bottom:12px}
+.nq .fld label{display:block;font-size:13px;color:#d8d1c3;margin-bottom:5px}
+.nq .fld input{width:100%;box-sizing:border-box;padding:13px 14px;border-radius:9px;border:1.5px solid #3a352d;background:#1f1c18;color:#fff;font-size:16px;font-family:inherit;direction:rtl;outline:none}
+.nq .fld input:focus{border-color:#e8b33a}
+.nq .fld input[type=tel]{direction:ltr;text-align:right}
+.nq .btn{width:100%;margin-top:6px;padding:15px;border:none;border-radius:9px;background:#e8b33a;color:#141210;font-size:17px;font-weight:800;font-family:inherit;cursor:pointer}
+.nq .price{font-size:20px;font-weight:800;margin:0 0 20px;color:#141210}.nq .price small{display:block;font-size:13px;font-weight:400;color:#6b6459}
+.nq .cust{flex-wrap:wrap}.nq .cust .strap{min-width:30%}
+.nq .lite{margin-top:12px}.nq .lite label{color:#3d3830}.nq .lite input,.nq .lite textarea{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:9px;border:1.5px solid #dcdcdc;background:#fff;color:#141210;font-size:16px;font-family:inherit;direction:rtl}
+.nq .small{font-size:12.5px;color:#8f8778;margin:12px 0 0;text-align:center}
+.nq .err{display:none;color:#ffb4a8;font-size:13.5px;margin:4px 0 0}
+.nq .ok{display:none;text-align:center;padding:10px 0}
+.nq .ok h2{color:#e8b33a;margin:0 0 6px}
+.nq .ok a{display:inline-block;margin-top:14px;background:#e8b33a;color:#141210;text-decoration:none;font-weight:800;padding:12px 26px;border-radius:9px}
+@media(max-width:560px){.nq .lede{font-size:17px}.nq .models{gap:8px}.nq .model .nm{font-size:15px}}
+
+.nq{padding-top:28px}
+.mk-foot{background:#070707;color:#9c937f;text-align:center;padding:28px 16px;font-size:13px;direction:rtl}
+.mk-foot b{color:#F5EDD6;font-size:18px;display:block;letter-spacing:1px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"معاليك — MAALIK","alternateName":"Maalik","description":"ساعات One of One فاخرة تُصمَّم وتُصنع لصاحبها وحده في الكويت. تبدأ من ٥٠٠ د.ك.","address":{"@type":"PostalAddress","addressCountry":"KW"},"areaServed":"Worldwide","contactPoint":{"@type":"ContactPoint","telephone":"+965-9939-5020","contactType":"customer service","availableLanguage":["ar","en"]}}
+</script>
+</head>
+<body>
+<nav class="mk-nav"><a href="./">معاليك</a><a href="nakhla-naqa.html" aria-current="page">إصدار النخلة والناقة</a><a href="designer.html">صمّم ساعتك</a></nav>
+<div class="nq">
+<span class="tag">معاليك</span>
+<p class="lede">نخلة وناقة على مينا بيضاء. أبسط رموز البر، وأقربها لنا.</p>
+<p class="sub">إصدار من معاليك بشكلين ونفس المينا. اختر الشكل والسوار، وإذا تبي أضف اسمك أو صمّم لمستك الخاصة، ونتواصل معك.</p>
+<p class="price">يبدأ من ٥٠٠ د.ك <small>السعر النهائي حسب اختياراتك والإضافات</small></p>
+
+<form id="nqf" novalidate>
+<input type="hidden" id="nqBody" name="contact[body]" value="">
+
+<div class="step">
+<b>١</b>اختر الإصدار</div>
+<div class="models">
+<label class="model sel"><input type="radio" name="contact[الإصدار]" value="المربع — ٤١ مم" checked><span class="chk">✓</span>
+<img src="img/nakhla-square.jpg" alt="إصدار النخلة والناقة من معاليك — الإصدار المربع ٤١ مم على المعصم" style="object-position:50% 55%">
+<span class="info"><span class="nm">الإصدار المربع</span><span class="sz">مقاس ٤١ مم</span></span></label>
+<label class="model"><input type="radio" name="contact[الإصدار]" value="المستطيل — ٣٦ مم"><span class="chk">✓</span>
+<img src="img/nakhla-rect.jpg" alt="إصدار النخلة والناقة من معاليك — الإصدار المستطيل ٣٦ مم بسير جلد" style="object-position:50% 50%">
+<span class="info"><span class="nm">الإصدار المستطيل</span><span class="sz">مقاس ٣٦ مم</span></span></label>
+</div>
+
+<div class="step">
+<b>٢</b>اختر السوار</div>
+<div class="straps">
+<label class="strap sel"><input type="radio" name="contact[السوار]" value="جلد" checked>جلد<small>سير جلد أسود</small></label>
+<label class="strap"><input type="radio" name="contact[السوار]" value="ستيل">ستيل<small>سوار معدني</small></label>
+</div>
+
+<div class="step">
+<b>٣</b>التخصيص</div>
+<div class="straps cust">
+<label class="strap sel"><input type="radio" name="contact[التخصيص]" value="بدون إضافة" checked>بدون إضافة<small>الإصدار كما هو</small></label>
+<label class="strap"><input type="radio" name="contact[التخصيص]" value="إضافة اسم">إضافة اسم<small>اسم أو تاريخ</small></label>
+<label class="strap"><input type="radio" name="contact[التخصيص]" value="تصميم خاص">تصميم خاص<small>فكرتك على الساعة</small></label>
+</div>
+<div class="fld lite" id="nqNameWrap" style="display:none">
+<label for="nqEng">الاسم أو التاريخ اللي تبيه على الساعة</label><input id="nqEng" name="contact[النص المطلوب]" type="text">
+</div>
+<div class="fld lite" id="nqIdeaWrap" style="display:none">
+<label for="nqIdea">اكتب فكرتك باختصار</label><textarea id="nqIdea" name="contact[فكرة التصميم]" rows="3"></textarea>
+</div>
+
+<div class="step">
+<b>٤</b>بياناتك</div>
+<div class="box">
+<div id="nqFields">
+<p class="sum" id="nqSum">الإصدار المربع — ٤١ مم، بسير جلد</p>
+<div class="fld">
+<label for="nqName">الاسم</label><input id="nqName" name="contact[name]" type="text" autocomplete="name" required>
+</div>
+<div class="fld">
+<label for="nqPhone">رقم الواتساب</label><input id="nqPhone" name="contact[phone]" type="tel" inputmode="tel" autocomplete="tel" placeholder="9xxxxxxx" required>
+</div>
+<p class="err" id="nqErr">اكتب رقم واتساب صحيح (٨ أرقام على الأقل).</p>
+<button type="submit" class="btn">أرسل طلبي</button>
+<p class="small">نستخدم رقمك للتواصل بخصوص طلبك فقط.</p>
+</div>
+<div class="ok" id="nqOk">
+<h2>وصلنا طلبك</h2>
+<p>بنتواصل معك على الواتساب بالتفاصيل والسعر.</p>
+<a href="https://wa.me/96599395020?text=%D8%A3%D8%B1%D8%B3%D9%84%D8%AA%20%D8%B7%D9%84%D8%A8%D9%8A%20%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D9%86%D8%AE%D9%84%D8%A9%20%D9%88%D8%A7%D9%84%D9%86%D8%A7%D9%82%D8%A9">تواصل معنا واتساب</a>
+</div>
+</div>
+</form>
+
+<div class="story">
+<p>بدأت الفكرة بصور البر والناقة، جمعناها قبل لا نرسم أي خط.</p>
+<p>بعدها صار التصميم، وبعده الشغل على طاولة الورشة قطعة قطعة، لين وصلت للمعصم.</p>
+</div>
+</div>
+<script>
+(function(){
+var f=document.getElementById('nqf');if(!f)return;
+function val(n){var r=f.querySelector('input[name="'+n+'"]:checked');return r?r.value:'';}
+function sync(){
+f.querySelectorAll('.model,.strap').forEach(function(l){l.classList.toggle('sel',l.querySelector('input').checked);});
+var m=val('contact[الإصدار]'),s=val('contact[السوار]'),c=val('contact[التخصيص]');
+document.getElementById('nqNameWrap').style.display=c==='إضافة اسم'?'block':'none';
+document.getElementById('nqIdeaWrap').style.display=c==='تصميم خاص'?'block':'none';
+document.getElementById('nqSum').textContent=(m.indexOf('المربع')>-1?'الإصدار المربع — ٤١ مم':'الإصدار المستطيل — ٣٦ مم')+'، '+(s==='جلد'?'بسير جلد':'بسوار ستيل');
+}
+f.querySelectorAll('.model input,.strap input').forEach(function(i){i.addEventListener('change',sync);});
+var toAscii=function(s){return s.replace(/[٠-٩]/g,function(d){return String(d.charCodeAt(0)-1632)}).replace(/[۰-۹]/g,function(d){return String(d.charCodeAt(0)-1776)})};
+f.addEventListener('submit',function(e){
+var n=document.getElementById('nqName').value.trim();
+var p=toAscii(document.getElementById('nqPhone').value).replace(/[^\d+]/g,'');
+var err=document.getElementById('nqErr');
+e.preventDefault();
+if(p.replace(/\D/g,'').length<8){err.style.display='block';return;}
+err.style.display='none';
+document.getElementById('nqPhone').value=p;
+document.getElementById('nqBody').value='طلب معاليك — إصدار النخلة والناقة\nالإصدار: '+val('contact[الإصدار]')+'\nالسوار: '+val('contact[السوار]')+'\nالتخصيص: '+val('contact[التخصيص]')+(val('contact[التخصيص]')==='إضافة اسم'?' — '+document.getElementById('nqEng').value:'')+(val('contact[التخصيص]')==='تصميم خاص'?' — '+document.getElementById('nqIdea').value:'')+'\nالاسم: '+n+'\nالواتساب: '+p;
+var msg=document.getElementById('nqBody').value;
+window.open('https://wa.me/96599395020?text='+encodeURIComponent(msg),'_blank');
+document.getElementById('nqFields').style.display='none';document.getElementById('nqOk').style.display='block';document.getElementById('nqOk').scrollIntoView({behavior:'smooth'});
+});
+sync();
+})();
+</script>
+<footer class="mk-foot"><b>معاليك</b>MAALIK · ساعات One of One · الكويت</footer>
+</body>
+</html>

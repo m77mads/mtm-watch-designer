@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>معاليك — ساعات One of One</title>
+<meta name="description" content="معاليك: ساعة واحدة لك وحدك. تُصمَّم من قصتك وتُصنع مرة واحدة فقط ثم يُغلق تصميمها. تبدأ من ٥٠٠ د.ك — الكويت.">
+<meta property="og:title" content="معاليك — ساعات One of One">
+<meta property="og:description" content="معاليك: ساعة واحدة لك وحدك. تُصمَّم من قصتك وتُصنع مرة واحدة فقط ثم يُغلق تصميمها. تبدأ من ٥٠٠ د.ك — الكويت.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="img/nakhla-square.jpg">
+<meta name="theme-color" content="#070707">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="maalik.js" defer></script>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;background:#070707;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+.mk-nav{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;padding:12px 16px;border-bottom:1px solid #1f1c16;background:#070707;direction:rtl}
+.mk-nav a{color:#C9A84C;font-size:13px;font-weight:700;text-decoration:none;letter-spacing:.3px}
+.mk-nav a[aria-current]{color:#F5EDD6}
+
+.mk{direction:rtl;text-align:right;color:#E9E1CC;background:#070707;}
+.mk a{text-decoration:none;}
+.mk-in{max-width:760px;margin:0 auto;padding:0 20px;}
+.mk-top{display:flex;justify-content:space-between;align-items:center;padding:20px;border-bottom:1px solid #1f1c16;max-width:1100px;margin:0 auto;}
+.mk-logo{font-size:22px;font-weight:900;color:#F5EDD6!important;letter-spacing:1px;}
+.mk-logo span{display:block;font-size:10px;letter-spacing:5px;color:#C9A84C;font-weight:700;}
+.mk-top-btn{border:1px solid #C9A84C;color:#C9A84C!important;padding:9px 18px;border-radius:999px;font-size:13px;font-weight:800;}
+.mk-hero{text-align:center;padding:80px 20px 70px;}
+.mk-no{font-family:Georgia,serif;font-size:13px;letter-spacing:4px;color:#C9A84C;margin:0 0 22px;}
+.mk-hero h1{font-size:46px;font-weight:900;color:#F5EDD6;margin:0 0 8px;line-height:1.2;}
+.mk-hero .en{font-family:Georgia,serif;font-style:italic;font-size:26px;color:#C9A84C;margin:0 0 26px;}
+.mk-hero p.lead{color:#b5ad98;font-size:16px;line-height:2;margin:0 auto;max-width:540px;}
+.mk-price{display:inline-block;margin-top:30px;padding:11px 24px;border:1px solid #3a3326;border-radius:999px;color:#E9E1CC;font-size:14px;}
+.mk-line{width:60px;height:1px;background:#C9A84C;margin:0 auto;}
+.mk-sec{padding:64px 0;border-top:1px solid #16140f;}
+.mk-h2{font-size:26px;font-weight:900;color:#F5EDD6;margin:0 0 8px;}
+.mk-sub{font-size:15px;color:#8f887a;margin:0 0 30px;line-height:1.8;}
+.mk-oath{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.mk-oath div{border:1px solid #2a251b;border-radius:14px;padding:22px 18px;background:#0d0c0a;}
+.mk-oath b{display:block;font-family:Georgia,serif;font-size:28px;color:#C9A84C;margin-bottom:8px;font-weight:400;}
+.mk-oath h4{font-size:15px;color:#F5EDD6;margin:0 0 6px;font-weight:800;}
+.mk-oath p{font-size:13px;color:#8f887a;margin:0;line-height:1.8;}
+.mk-model{border:1px solid #2a251b;border-radius:16px;padding:28px 24px;margin-bottom:16px;background:linear-gradient(160deg,#0f0d0a,#070707);}
+.mk-model .tag{font-family:Georgia,serif;font-size:12px;letter-spacing:3px;color:#C9A84C;margin:0 0 8px;}
+.mk-model h3{font-size:26px;font-weight:900;color:#F5EDD6;margin:0 0 4px;}
+.mk-model .shape{font-size:13px;color:#6f695d;margin:0 0 14px;}
+.mk-model .story{font-size:15px;color:#c9c1ab;line-height:2;margin:0 0 14px;}
+.mk-model .ideas{font-size:13px;color:#C9A84C;margin:0;line-height:1.9;}
+.mk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.mk-card{border:1px solid #1f1c16;border-radius:12px;padding:18px;}
+.mk-card h4{font-size:15px;color:#F5EDD6;margin:0 0 6px;font-weight:800;}
+.mk-card p{font-size:13px;color:#8f887a;margin:0;line-height:1.8;}
+.mk-step{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid #16140f;}
+.mk-step:last-child{border-bottom:none;}
+.mk-step .n{flex-shrink:0;width:38px;height:38px;border-radius:50%;border:1px solid #C9A84C;color:#C9A84C;display:flex;align-items:center;justify-content:center;font-weight:900;}
+.mk-step h4{font-size:16px;color:#F5EDD6;margin:0 0 5px;font-weight:800;}
+.mk-step p{font-size:14px;color:#8f887a;margin:0;line-height:1.8;}
+.mk-note ul{margin:0;padding-right:18px;}
+.mk-note li{font-size:14px;color:#a39b88;line-height:2.1;}
+.mk-cta{text-align:center;padding:80px 20px;border-top:1px solid #16140f;}
+.mk-cta h3{font-size:30px;font-weight:900;color:#F5EDD6;margin:0 0 12px;}
+.mk-cta p{color:#8f887a;font-size:15px;line-height:1.9;margin:0 auto 28px;max-width:480px;}
+.mk-btn{display:inline-block;padding:17px 38px;background:#C9A84C;color:#070707!important;border-radius:999px;font-size:16px;font-weight:900;}
+.mk-btn:hover{background:#dab85e;}
+.mk-tel{margin-top:16px!important;font-size:13px!important;}
+.mk-tel a{color:#C9A84C!important;font-weight:700;}
+.mk-foot{text-align:center;padding:30px 20px 40px;border-top:1px solid #16140f;font-size:12px;color:#5a554b;line-height:2;}
+.mk-foot .mk-logo{font-size:18px;}
+@media(max-width:600px){.mk-hero{padding:56px 16px 50px;}.mk-hero h1{font-size:34px;}.mk-hero .en{font-size:21px;}.mk-oath,.mk-grid{grid-template-columns:1fr;}.mk-sec{padding:48px 0;}.mk-cta h3{font-size:24px;}}
+/* === مُصمِّع معاليك === */
+.mkc{padding:72px 0;border-top:1px solid #16140f;}
+.mkc-lbl{font-size:15px;color:#a39b88;font-weight:700;margin:28px 0 14px;}
+.mkc-models{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:4px;}
+.mkc-m{border:1px solid #2a251b;border-radius:14px;padding:18px 10px 14px;background:#0d0c0a;cursor:pointer;text-align:center;transition:border-color .2s,background .2s;color:#C9A84C;font-family:inherit;}
+.mkc-m.sel,.mkc-m:hover{border-color:#C9A84C;background:#111009;}
+.mkc-m svg{width:52px;height:68px;display:block;margin:0 auto 10px;}
+.mkc-m span{font-size:13px;color:#F5EDD6;font-weight:800;display:block;margin-bottom:3px;}
+.mkc-m small{font-size:11px;color:#6f695d;}
+.mkc-colors{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:4px;}
+.mkc-sw{width:34px;height:34px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:border-color .2s,transform .15s;flex-shrink:0;}
+.mkc-sw.sel,.mkc-sw:hover{border-color:#C9A84C;transform:scale(1.15);}
+.mkc-inp{width:100%;background:#0d0c0a;border:1px solid #2a251b;border-radius:10px;padding:14px 16px;color:#F5EDD6;font-size:15px;outline:none;font-family:inherit;direction:rtl;box-sizing:border-box;}
+.mkc-inp:focus{border-color:#C9A84C;}
+.mkc-prev{text-align:center;margin:28px 0 6px;}
+.mkc-eng-p{text-align:center;color:#8f887a;font-family:Georgia,serif;font-size:13px;min-height:22px;margin:6px 0 24px;letter-spacing:2px;}
+.mkc-cta{display:block;width:100%;padding:17px;background:#C9A84C;color:#070707!important;border-radius:999px;font-size:16px;font-weight:900;text-align:center;cursor:pointer;border:none;font-family:inherit;}
+.mkc-cta:hover{background:#dab85e;}
+@media(max-width:600px){.mkc-models{grid-template-columns:repeat(2,1fr);}}
+
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"معاليك — MAALIK","alternateName":"Maalik","description":"ساعات One of One فاخرة تُصمَّم وتُصنع لصاحبها وحده في الكويت. تبدأ من ٥٠٠ د.ك.","address":{"@type":"PostalAddress","addressCountry":"KW"},"areaServed":"Worldwide","contactPoint":{"@type":"ContactPoint","telephone":"+965-9939-5020","contactType":"customer service","availableLanguage":["ar","en"]}}
+</script>
+</head>
+<body>
+<nav class="mk-nav"><a href="./" aria-current="page">معاليك</a><a href="nakhla-naqa.html">إصدار النخلة والناقة</a><a href="designer.html">صمّم ساعتك</a></nav>
+<div class="mk">
+
+  <div class="mk-top">
+    <a class="mk-logo" href="./">معاليك<span>MAALIK</span></a>
+    <a class="mk-top-btn" href="https://wa.me/96599395020?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%85%D9%86%20%D9%85%D8%B9%D8%A7%D9%84%D9%8A%D9%83">احجز جلسة تصميم</a>
+  </div>
+
+  <div class="mk-hero">
+    <p class="mk-no">Nº 001 / 001</p>
+    <h1>ساعة واحدة. لك وحدك.</h1>
+    <p class="en">One of One</p>
+    <p class="lead">في معاليك لا توجد مجموعات ولا مخزون. كل ساعة تبدأ من قصتك، تُرسم لك، تُصنع مرة واحدة، ثم يُغلق تصميمها للأبد. لن يلبس أحد ساعتك — لا اليوم ولا بعد مئة عام.</p>
+    <span class="mk-price">تبدأ من ٥٠٠ د.ك</span>
+  </div>
+
+  <div class="mk-in">
+
+    <div class="mk-sec">
+      <h2 class="mk-h2">عهد الـ One of One</h2>
+      <p class="mk-sub">ثلاثة التزامات نكتبها في شهادة كل ساعة.</p>
+      <div class="mk-oath">
+        <div>
+<b>١</b><h4>تصميم لا يتكرر</h4>
+<p>التصميم الذي تعتمده يُسجَّل باسمك ولا يُعاد إنتاجه لأي عميل آخر، بأي سعر.</p>
+</div>
+        <div>
+<b>١</b><h4>نسخة واحدة فقط</h4>
+<p>تُصنع قطعة واحدة، تحمل رقم 001/001 وتاريخ صنعها واسم مالكها.</p>
+</div>
+        <div>
+<b>٣٠</b><h4>يوماً حتى التسليم</h4>
+<p>من اعتماد التصميم إلى يدك خلال شهر، مثبتة كتابياً.</p>
+</div>
+      </div>
+    </div>
+
+    <div class="mk-sec">
+      <h2 class="mk-h2">نقطة البداية: أربعة هياكل</h2>
+      <p class="mk-sub">الهيكل هو الأساس فقط. كل ما فوقه — المينا والألوان والأحجار والنقش — يُرسم لك من الصفر.</p>
+      <div class="mk-model">
+<p class="tag">I</p>
+<h3>الديوان</h3>
+<p class="shape">الهيكل المستطيل</p>
+<p class="story">في الديوانية تُقال الكلمة وتُحسم الأمور. خطوط مستقيمة، حضور هادئ، وثقة لا تحتاج أن ترفع صوتها.</p>
+<p class="ideas">نقوش الأبواب الكويتية القديمة · خط عربي باسمك · مينا عاجية</p>
+</div>
+      <div class="mk-model">
+<p class="tag">II</p>
+<h3>البدر</h3>
+<p class="shape">الهيكل المستدير</p>
+<p class="story">قبل البوصلة، كان أهل البر يهتدون بالقمر والنجوم. دائرة كاملة كليلة البدر فوق الصحراء — أقدم شكل للوقت وأصدقه.</p>
+<p class="ideas">سماء ليلية بنجوم من الألماس · صقر في طيرانه · كثبان بالذهب</p>
+</div>
+      <div class="mk-model">
+<p class="tag">III</p>
+<h3>المرقاب</h3>
+<p class="shape">الهيكل الثماني بسوار متكامل</p>
+<p class="story">من أعلى المرقاب كانت تُرصد السفن العائدة والقادمة. أضلاع حادة وسوار متصل كالسور — لمن اعتاد أن يرى الأمور قبل غيره.</p>
+<p class="ideas">نقش السور القديم · أفق المدينة · ترصيع على الأضلاع</p>
+</div>
+      <div class="mk-model">
+<p class="tag">IV</p>
+<h3>النوخذة</h3>
+<p class="shape">هيكل الإطار الدوّار</p>
+<p class="story">النوخذة كان يحسب أنفاس الغاصة ووقت نزولهم لقاع البحر. الإطار الدوّار وُلد لنفس الغاية: أن تقيس الوقت حين يكون لكل ثانية ثمن.</p>
+<p class="ideas">سفينة البوم على الموج · لؤلؤ طبيعي في المؤشرات · أزرق الخليج العميق</p>
+</div>
+    </div>
+
+    <div class="mk-sec">
+      <h2 class="mk-h2">ما يُرسم لك من الصفر</h2>
+      <p class="mk-sub">ستة عناصر لا نكررها بين عميل وآخر.</p>
+      <div class="mk-grid">
+        <div class="mk-card">
+<h4>المينا</h4>
+<p>صدف طبيعي، مينا مصقولة، أو سطح مُعالج يدوياً — برسم خاص بقصتك.</p>
+</div>
+        <div class="mk-card">
+<h4>اللون</h4>
+<p>أي لون، حتى المطابق لكود Pantone أو للون تحمله في بالك.</p>
+</div>
+        <div class="mk-card">
+<h4>الأحجار الكريمة</h4>
+<p>ترصيع على المينا أو الإطار بالنمط والتوزيع الذي تعتمده.</p>
+</div>
+        <div class="mk-card">
+<h4>المعدن والإطار</h4>
+<p>لون معدن الهيكل ومقاسه وتشطيب الإطار.</p>
+</div>
+        <div class="mk-card">
+<h4>السير</h4>
+<p>جلد طبيعي أو معدن، باللون والخياطة والإبزيم المناسب.</p>
+</div>
+        <div class="mk-card">
+<h4>الاسم والتاريخ</h4>
+<p>اسمك أو اسم من تُهديها له، وتاريخ يستحق أن يُخلَّد.</p>
+</div>
+      </div>
+    </div>
+
+    <div class="mk-sec">
+      <h2 class="mk-h2">كيف تولد ساعتك</h2>
+      <p class="mk-sub">من أول محادثة إلى الساعة في يدك — خلال شهر.</p>
+      <div class="mk-step">
+<div class="n">١</div>
+<div>
+<h4>جلسة التصميم</h4>
+<p>نستمع لقصتك: المناسبة، الشخص، الطابع. نخرج منها بالهيكل المناسب وتصور للخامات والميزانية.</p>
+</div>
+</div>
+      <div class="mk-step">
+<div class="n">٢</div>
+<div>
+<h4>الرسومات والاعتماد</h4>
+<p>عدة رسومات أولية تختار منها، نطوّر المختار حتى تعتمده خطياً مع السعر النهائي.</p>
+</div>
+</div>
+      <div class="mk-step">
+<div class="n">٣</div>
+<div>
+<h4>الصنع والترصيع</h4>
+<p>تُنفَّذ المينا وتُرصَّع الأحجار ويُجمَّع الهيكل — قطعة واحدة بعناية قطعة واحدة.</p>
+</div>
+</div>
+      <div class="mk-step">
+<div class="n">٤</div>
+<div>
+<h4>التسليم والشهادة</h4>
+<p>تصلك في علبتها الخاصة، مع شهادة One of One برقم 001/001 وتفاصيل الخامات والأحجار.</p>
+</div>
+</div>
+    </div>
+
+    <div class="mk-sec mk-note">
+      <h2 class="mk-h2">قبل أن تبدأ</h2>
+      <ul>
+        <li>السعر النهائي يُحدَّد بعد اعتماد التصميم، حسب الخامات والأحجار وأسعار الذهب والألماس وقتها.</li>
+        <li>يُدفع ٥٠٪ عند اعتماد التصميم، والباقي عند التسليم.</li>
+        <li>القطعة تُصنع لك خصيصاً، فلا تقبل الاسترجاع أو الاستبدال بعد الاعتماد.</li>
+        <li>مدة التنفيذ لا تتجاوز شهراً من الاعتماد، وتُثبَّت كتابياً.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="mkc">
+    <div class="mk-in">
+      <h2 class="mk-h2">ابدأ تصوّر ساعتك</h2>
+      <p class="mk-sub">اختر الهيكل والمينا والنقش. سيُرسل اختيارك تلقائياً كنقطة بداية لجلسة التصميم.</p>
+
+      <p class="mkc-lbl">الهيكل الأساسي</p>
+      <div class="mkc-models" id="mkc-shapes">
+        <button class="mkc-m" data-shape="الديوان" onclick="mkSelShape(this)">
+          <svg viewbox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><rect x="8" y="2" width="44" height="56" rx="8" stroke-width="2.5"></rect><line x1="8" y1="16" x2="52" y2="16" stroke-width="1.2" stroke-dasharray="2,3"></line><line x1="8" y1="44" x2="52" y2="44" stroke-width="1.2" stroke-dasharray="2,3"></line><circle cx="30" cy="30" r="6" stroke-width="2"></circle><line x1="30" y1="24" x2="30" y2="16" stroke-width="1.5"></line><line x1="30" y1="30" x2="38" y2="30" stroke-width="1.5"></line><rect x="22" y="58" width="16" height="18" rx="5" stroke-width="2"></rect></svg>
+          <span>الديوان</span><small>مستطيل</small>
+        </button>
+        <button class="mkc-m" data-shape="البدر" onclick="mkSelShape(this)">
+          <svg viewbox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><circle cx="30" cy="30" r="22" stroke-width="2.5"></circle><circle cx="30" cy="30" r="17" stroke-width="1" stroke-dasharray="3,3"></circle><circle cx="30" cy="30" r="4" stroke-width="2"></circle><line x1="30" y1="26" x2="30" y2="13" stroke-width="1.5"></line><line x1="30" y1="30" x2="40" y2="30" stroke-width="1.5"></line><line x1="30" y1="8" x2="30" y2="4" stroke-width="1.5"></line><line x1="30" y1="56" x2="30" y2="52" stroke-width="1.5"></line><rect x="22" y="52" width="16" height="22" rx="5" stroke-width="2"></rect></svg>
+          <span>البدر</span><small>مستدير</small>
+        </button>
+        <button class="mkc-m" data-shape="المرقاب" onclick="mkSelShape(this)">
+          <svg viewbox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><polygon points="30,4 48,12 56,30 48,48 30,56 12,48 4,30 12,12" stroke-width="2.5"></polygon><polygon points="30,10 44,17 51,30 44,43 30,50 16,43 9,30 16,17" stroke-width="1" stroke-dasharray="2,3"></polygon><circle cx="30" cy="30" r="4" stroke-width="2"></circle><line x1="30" y1="26" x2="30" y2="14" stroke-width="1.5"></line><line x1="30" y1="30" x2="42" y2="30" stroke-width="1.5"></line><rect x="22" y="56" width="16" height="20" rx="5" stroke-width="2"></rect></svg>
+          <span>المرقاب</span><small>ثماني</small>
+        </button>
+        <button class="mkc-m" data-shape="النوخذة" onclick="mkSelShape(this)">
+          <svg viewbox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><circle cx="30" cy="30" r="22" stroke-width="2.5"></circle><circle cx="30" cy="30" r="27" stroke-width="1.5" stroke-dasharray="2,2"></circle><circle cx="30" cy="30" r="4" stroke-width="2"></circle><line x1="30" y1="26" x2="30" y2="13" stroke-width="1.5"></line><line x1="30" y1="30" x2="40" y2="30" stroke-width="1.5"></line><rect x="20" y="57" width="20" height="20" rx="5" stroke-width="2"></rect></svg>
+          <span>النوخذة</span><small>دوّار</small>
+        </button>
+      </div>
+
+      <p class="mkc-lbl" style="margin-top:24px;">لون المينا</p>
+      <div class="mkc-colors" id="mkc-colors">
+        <div class="mkc-sw" data-color="أبيض عاجي" data-hex="#F5EDD6" style="background:#F5EDD6;" onclick="mkSelColor(this)" title="عاجي"></div>
+        <div class="mkc-sw" data-color="أسود" data-hex="#1a1810" style="background:#1a1810;border-color:#333;" onclick="mkSelColor(this)" title="أسود"></div>
+        <div class="mkc-sw" data-color="ذهبي" data-hex="#C9A84C" style="background:#C9A84C;" onclick="mkSelColor(this)" title="ذهبي"></div>
+        <div class="mkc-sw" data-color="أزرق خليجي" data-hex="#1a4a7a" style="background:#1a4a7a;" onclick="mkSelColor(this)" title="أزرق خليجي"></div>
+        <div class="mkc-sw" data-color="أخضر زيتوني" data-hex="#4a5a35" style="background:#4a5a35;" onclick="mkSelColor(this)" title="زيتوني"></div>
+        <div class="mkc-sw" data-color="رمادي فضي" data-hex="#8a8a8a" style="background:#8a8a8a;" onclick="mkSelColor(this)" title="فضي"></div>
+        <div class="mkc-sw" data-color="بيج دافئ" data-hex="#c9b89a" style="background:#c9b89a;" onclick="mkSelColor(this)" title="بيج"></div>
+        <div class="mkc-sw" data-color="أحمر عنابي" data-hex="#7a1a1a" style="background:#7a1a1a;" onclick="mkSelColor(this)" title="عنابي"></div>
+        <div class="mkc-sw" data-color="صدف طبيعي" data-hex="#ece0cc" style="background:linear-gradient(135deg,#f0e8d8,#d4c8b8,#e8dcc8);" onclick="mkSelColor(this)" title="صدف"></div>
+        <div class="mkc-sw" data-color="رمادي غامق" data-hex="#2e2e2e" style="background:#2e2e2e;border-color:#444;" onclick="mkSelColor(this)" title="رمادي غامق"></div>
+      </div>
+
+      <p class="mkc-lbl" style="margin-top:24px;">النقش على الظهر (اختياري)</p>
+      <input class="mkc-inp" id="mkc-eng" type="text" placeholder="اسمك أو تاريخ المناسبة أو كلمة تحملها..." maxlength="40" oninput="mkUpdate()">
+
+      <p class="mkc-lbl" style="margin-top:28px;">معاينة أولية</p>
+      <div class="mkc-prev">
+        <svg id="mkc-svg" viewbox="0 0 160 220" xmlns="http://www.w3.org/2000/svg" width="160" height="220">
+          <rect x="62" y="0" width="36" height="38" rx="8" fill="#1f1c16" stroke="#C9A84C" stroke-width="1.2"></rect>
+          <g id="mkc-case" transform="translate(80,110)">
+            <circle id="mkc-outer" r="62" fill="#111009" stroke="#C9A84C" stroke-width="2.5"></circle>
+            <circle id="mkc-inner" r="56" fill="none" stroke="#3a3326" stroke-width="1" stroke-dasharray="4,4"></circle>
+            <circle id="mkc-dial" r="50" fill="#F5EDD6"></circle>
+            <g stroke="#6f695d" stroke-width="1.5" stroke-linecap="round">
+              <line x1="0" y1="-44" x2="0" y2="-38" transform="rotate(0)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(30)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(60)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-38" transform="rotate(90)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(120)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(150)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-38" transform="rotate(180)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(210)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(240)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-38" transform="rotate(270)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(300)"></line>
+              <line x1="0" y1="-44" x2="0" y2="-41" transform="rotate(330)"></line>
+            </g>
+            <line x1="0" y1="6" x2="-16" y2="-28" stroke="#2a251b" stroke-width="2.5" stroke-linecap="round"></line>
+            <line x1="0" y1="8" x2="10" y2="-38" stroke="#2a251b" stroke-width="2" stroke-linecap="round"></line>
+            <circle r="3.5" fill="#C9A84C"></circle>
+            <rect id="mkc-crown" x="62" y="-5" width="10" height="10" rx="3" fill="#1f1c16" stroke="#C9A84C" stroke-width="1.2"></rect>
+          </g>
+          <text x="80" y="104" text-anchor="middle" font-family="Georgia,serif" font-size="7" letter-spacing="3" fill="#C9A84C" opacity="0.8">MAALIK</text>
+          <rect x="62" y="174" width="36" height="38" rx="8" fill="#1f1c16" stroke="#C9A84C" stroke-width="1.2"></rect>
+          <line x1="72" y1="204" x2="88" y2="204" stroke="#C9A84C" stroke-width="1" opacity="0.4"></line>
+        </svg>
+      </div>
+      <p class="mkc-eng-p" id="mkc-eng-p"></p>
+
+      <button class="mkc-cta" onclick="mkWA()">أرسل تصوّري عبر الواتساب ←</button>
+    </div>
+  </div>
+
+  <div class="mk-cta">
+    <h3>ابدأ قصة ساعتك</h3>
+    <p>أخبرنا عن المناسبة والفكرة، ونرجع لك بتصور أولي وميزانية واضحة.</p>
+    <a class="mk-btn" href="https://wa.me/96599395020?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B3%D8%A7%D8%B9%D8%A9%20%D9%85%D9%86%20%D9%85%D8%B9%D8%A7%D9%84%D9%8A%D9%83">احجز جلستك عبر الواتساب</a>
+    <p class="mk-tel">أو اتصل مباشرة: <a href="tel:+96599395020">+965 99395020</a></p>
+  </div>
+
+  <div class="mk-foot">
+    <div class="mk-logo">معاليك<span>MAALIK</span>
+</div>
+    <p style="margin:10px 0 0;">ساعات One of One — تُصمَّم وتُصنع لصاحبها وحده<br>الكويت · © معاليك</p>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  var S={shape:'',color:'',hex:'#F5EDD6',eng:''};
+  window.mkSelShape=function(b){
+    document.querySelectorAll('#mkc-shapes .mkc-m').forEach(function(x){x.classList.remove('sel');});
+    b.classList.add('sel'); S.shape=b.getAttribute('data-shape'); mkUpdate();
+  };
+  window.mkSelColor=function(el){
+    document.querySelectorAll('#mkc-colors .mkc-sw').forEach(function(x){x.classList.remove('sel');});
+    el.classList.add('sel'); S.color=el.getAttribute('data-color'); S.hex=el.getAttribute('data-hex'); mkUpdate();
+  };
+  window.mkUpdate=function(){
+    var d=document.getElementById('mkc-dial');
+    if(d) d.setAttribute('fill',S.hex||'#F5EDD6');
+    var e=document.getElementById('mkc-eng'); if(e) S.eng=e.value;
+    var ep=document.getElementById('mkc-eng-p');
+    if(ep) ep.textContent=S.eng?'❖ '+S.eng+' ❖':'';
+  };
+  window.mkWA=function(){
+    var m='مرحبا، أرغب بتصميم ساعة معاليك:\n';
+    if(S.shape) m+='• الهيكل: '+S.shape+'\n';
+    if(S.color) m+='• لون المينا: '+S.color+'\n';
+    if(S.eng)   m+='• النقش: '+S.eng+'\n';
+    if(!S.shape&&!S.color&&!S.eng) m='مرحبا، أرغب بالاستفسار عن تصميم ساعة معاليك.';
+    window.open('https://wa.me/96599395020?text='+encodeURIComponent(m),'_blank');
+  };
+})();
+</script>
+</body>
+</html>
