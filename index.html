@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>معاليك — ساعة تُصمَّم لك وحدك</title>
+<meta name="description" content="معاليك: اختر شكل ساعتك وسوارها ولون المينا، واحجز موعد تصميم خاص عبر الواتساب. ساعة One of One تُصنع لك وحدك — تبدأ من ٥٠٠ د.ك. الكويت.">
+<meta property="og:title" content="معاليك — ساعة تُصمَّم لك وحدك">
+<meta property="og:description" content="اختر التصميم والسوار ولون المينا، واحجز موعدك. تبدأ من ٥٠٠ د.ك.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Noto+Kufi+Arabic:wght@500;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="maalik.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"معاليك — MAALIK","alternateName":"Maalik","description":"ساعات One of One تُصمَّم وتُصنع لصاحبها وحده في الكويت. تبدأ من ٥٠٠ د.ك.","address":{"@type":"PostalAddress","addressCountry":"KW"},"areaServed":"Worldwide","contactPoint":{"@type":"ContactPoint","telephone":"+965-9939-5020","contactType":"customer service","availableLanguage":["ar","en"]}}
+</script>
+<style>
+:root{
+  --bg:#0A0A0A; --bg2:#121110; --bg3:#1A1815; --line:#2A2620;
+  --gold:#C9A84C; --gold2:#E3C877; --cream:#F5EDD6; --dim:#A79F8C; --dim2:#6F6858;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--cream)}
+body{font-family:'Tajawal',system-ui,sans-serif;font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Noto Kufi Arabic','Tajawal',sans-serif;margin:0;color:var(--cream);line-height:1.4}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.en{font-family:'Cinzel',Georgia,serif;letter-spacing:.18em}
+
+/* top */
+.top{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;flex-direction:column;line-height:1.1}
+.logo b{font-family:'Noto Kufi Arabic',sans-serif;font-size:20px;color:var(--cream)}
+.logo span{font-size:10px;color:var(--gold)}
+.top nav{display:flex;gap:18px;align-items:center;font-size:14px;color:var(--dim)}
+.top nav a:hover{color:var(--cream)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font-weight:700;font-size:15px;padding:12px 24px;border:1px solid var(--gold);transition:background .2s,color .2s}
+.btn-gold{background:var(--gold);color:#16120A}
+.btn-gold:hover{background:var(--gold2)}
+.btn-line{color:var(--gold);background:transparent}
+.btn-line:hover{background:rgba(201,168,76,.1)}
+.top .btn{padding:8px 16px;font-size:13px}
+@media(max-width:640px){.top nav .hide-sm{display:none}}
+
+/* hero */
+.hero{text-align:center;padding:84px 0 64px;border-bottom:1px solid var(--line)}
+.hero .kicker{color:var(--gold);font-size:12px;margin-bottom:18px}
+.hero h1{font-size:clamp(32px,6vw,54px);font-weight:800}
+.hero p{max-width:560px;margin:18px auto 0;color:var(--dim);font-size:17px}
+.price{display:inline-block;margin:28px 0 30px;padding:10px 22px;border:1px solid var(--line);border-radius:999px;color:var(--cream);font-weight:700}
+.price b{color:var(--gold)}
+.hero .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* studio */
+section{padding:72px 0}
+.sec-head{text-align:center;margin-bottom:40px}
+.sec-head .en{color:var(--gold);font-size:11px;display:block;margin-bottom:10px}
+.sec-head h2{font-size:clamp(24px,4vw,34px)}
+.sec-head p{color:var(--dim);margin:10px auto 0;max-width:540px}
+.studio{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:start}
+@media(max-width:860px){.studio{grid-template-columns:1fr;gap:28px}}
+.stage{position:sticky;top:88px;background:radial-gradient(120% 90% at 50% 35%,#1E1B16 0%,#0E0D0B 70%);border:1px solid var(--line);border-radius:20px;padding:24px 16px 18px;text-align:center}
+@media(max-width:860px){.stage{position:relative;top:0}.stage svg{max-width:210px}}
+.stage svg{width:100%;max-width:300px;height:auto;display:block;margin:0 auto}
+.stage .tag{font-size:12px;color:var(--dim2);margin-top:6px}
+.stage .sum{margin-top:12px;font-size:14px;color:var(--cream)}
+.stage .sum b{color:var(--gold);font-weight:700}
+
+.step{margin-bottom:34px}
+.step h3{font-size:17px;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.step h3 i{font-style:normal;width:28px;height:28px;border-radius:50%;background:var(--gold);color:#16120A;display:inline-flex;align-items:center;justify-content:center;font-size:14px;font-family:'Tajawal',sans-serif;font-weight:700}
+.grid5{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+@media(max-width:520px){.grid5{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.opt{background:var(--bg2);border:1px solid var(--line);border-radius:14px;color:var(--cream);padding:10px 6px 10px;text-align:center;transition:border-color .2s,background .2s}
+.opt:hover{border-color:#4A4335}
+.opt[aria-pressed="true"]{border-color:var(--gold);background:#1A160E}
+.opt svg{width:100%;height:auto;max-height:84px;display:block}
+.opt span{display:block;font-size:13px;margin-top:4px;font-weight:700}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.opt.strap{padding:16px 8px}
+.opt.strap small{display:block;color:var(--dim);font-size:12px;font-weight:400}
+.sw{display:flex;flex-wrap:wrap;gap:12px}
+.sw button{width:44px;height:44px;border-radius:50%;border:2px solid var(--line);padding:0;position:relative}
+.sw button[aria-pressed="true"]{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.25)}
+.sw-name{margin-top:10px;font-size:14px;color:var(--dim)}
+.sw-name b{color:var(--cream)}
+.field{display:block;margin-top:6px}
+.field label{display:block;font-size:13px;color:var(--dim);margin-bottom:6px}
+.field input{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:12px;color:var(--cream);font-family:inherit;font-size:15px;padding:12px 14px}
+.field input:focus{outline:none;border-color:var(--gold)}
+.book{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:22px}
+.book p{margin:0 0 14px;color:var(--dim);font-size:14px}
+.book .btn{width:100%;margin-top:14px;padding:15px}
+.note{font-size:12px;color:var(--dim2);margin-top:10px;text-align:center}
+
+/* how */
+.how{border-top:1px solid var(--line)}
+.steps4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media(max-width:860px){.steps4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.steps4{grid-template-columns:1fr}}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card .n{font-family:'Cinzel',serif;color:var(--gold);font-size:22px}
+.card h3{font-size:16px;margin:6px 0}
+.card p{margin:0;color:var(--dim);font-size:14px}
+.promise{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:16px}
+@media(max-width:760px){.promise{grid-template-columns:1fr}}
+.promise .card{text-align:center}
+.promise .big{font-family:'Noto Kufi Arabic',sans-serif;font-size:28px;color:var(--gold);font-weight:800}
+
+/* final */
+.final{text-align:center;border-top:1px solid var(--line)}
+.final h2{font-size:clamp(24px,4vw,34px)}
+.final p{color:var(--dim);max-width:520px;margin:12px auto 26px}
+footer{border-top:1px solid var(--line);padding:30px 0;text-align:center;color:var(--dim2);font-size:13px}
+footer b{display:block;font-family:'Noto Kufi Arabic',sans-serif;color:var(--cream);font-size:18px}
+.fine{font-size:12px;color:var(--dim2);max-width:620px;margin:18px auto 0}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./"><b>معاليك</b><span class="en">MAALIK</span></a>
+    <nav>
+      <a class="hide-sm" href="#design">صمّم ساعتك</a>
+      <a class="hide-sm" href="#how">كيف نشتغل</a>
+      <a class="hide-sm" href="nakhla-naqa.html">النخلة والناقة</a>
+      <a class="btn btn-line" href="#design">احجز موعد</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker en">ONE OF ONE</div>
+      <h1>ساعة واحدة. لك وحدك.</h1>
+      <p>في معاليك ما فيه مخزون ولا مجموعات. تختار الشكل والسوار ولون المينا، ونجلس معك نصمم الباقي. تنصنع مرة وحدة، وتصميمها ما يتكرر.</p>
+      <div class="price">تبدأ من <b>٥٠٠ د.ك</b></div>
+      <div class="ctas">
+        <a class="btn btn-gold" href="#design">ابدأ التصميم</a>
+        <a class="btn btn-line" href="https://wa.me/96599395020?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%A8%D9%8A%20%D8%A3%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D8%B9%20%D9%85%D8%B9%D8%A7%D9%84%D9%8A%D9%83." target="_blank" rel="noopener">واتساب مباشر</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="design">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="en">THE STUDIO</span>
+        <h2>صمّم ساعتك</h2>
+        <p>ثلاث خطوات، وبعدها نحجز معك موعد ونرسم التصميم النهائي.</p>
+      </div>
+
+      <div class="studio">
+        <div class="stage" aria-live="polite">
+          <svg id="preview" viewBox="0 0 240 400" role="img" aria-label="معاينة الساعة"></svg>
+          <div class="sum" id="sum"></div>
+          <div class="tag">تصور مبدئي — التصميم النهائي يُرسم لك في الموعد</div>
+        </div>
+
+        <div>
+          <div class="step">
+            <h3><i>١</i> اختر التصميم</h3>
+            <div class="grid5" id="shapes"></div>
+          </div>
+
+          <div class="step">
+            <h3><i>٢</i> اختر السوار</h3>
+            <div class="grid3" id="straps"></div>
+          </div>
+
+          <div class="step">
+            <h3><i>٣</i> اختر لون المينا</h3>
+            <div class="sw" id="dials"></div>
+            <div class="sw-name">اللون: <b id="dialName"></b></div>
+          </div>
+
+          <div class="step">
+            <h3><i>٤</i> احجز موعد التصميم</h3>
+            <div class="book">
+              <p>نرسل اختياراتك على الواتساب، ونتفق على موعد نفهم فيه قصتك ونرسم لك التصميم النهائي.</p>
+              <div class="field">
+                <label for="nm">اسمك (اختياري)</label>
+                <input id="nm" autocomplete="name" placeholder="مثال: عبدالله">
+              </div>
+              <div class="field" style="margin-top:12px">
+                <label for="idea">فكرة أو مناسبة (اختياري)</label>
+                <input id="idea" placeholder="مثال: هدية تخرج، اسم وتاريخ على الظهر">
+              </div>
+              <button class="btn btn-gold" id="bookBtn" type="button">احجز موعد عبر الواتساب</button>
+              <div class="note">الأسعار تبدأ من ٥٠٠ د.ك، والسعر النهائي يتحدد بعد اعتماد التصميم.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="en">THE JOURNEY</span>
+        <h2>من الموعد لين معصمك</h2>
+      </div>
+      <div class="steps4">
+        <div class="card"><div class="n">I</div><h3>الموعد</h3><p>نجلس معك (حضورياً أو عبر واتساب) ونفهم المناسبة والذوق والميزانية.</p></div>
+        <div class="card"><div class="n">II</div><h3>الرسم والاعتماد</h3><p>نرسم لك التصميم ونطوّره لين تعتمده مع السعر النهائي.</p></div>
+        <div class="card"><div class="n">III</div><h3>الصنع</h3><p>تنصنع ساعتك قطعة وحدة، وتشوف مراحلها وهي تنصنع.</p></div>
+        <div class="card"><div class="n">IV</div><h3>التسليم</h3><p>تستلمها مع شهادة «١ من ١» باسمك، والتصميم ما يتكرر.</p></div>
+      </div>
+      <div class="promise">
+        <div class="card"><div class="big">١ من ١</div><p>تصميم واحد يُسجَّل باسمك وما يُعاد لأي عميل ثاني.</p></div>
+        <div class="card"><div class="big">٣٠ يوم</div><p>من اعتماد التصميم إلى يدك، مثبتة كتابياً.</p></div>
+        <div class="card"><div class="big">٥٠٠ د.ك</div><p>نقطة البداية. السعر النهائي حسب الخامات والتفاصيل.</p></div>
+      </div>
+      <p class="fine">يُدفع ٥٠٪ عند اعتماد التصميم والباقي عند التسليم. القطعة تُصنع لك خصيصاً، فما تنرجع ولا تنستبدل بعد الاعتماد إلا في حال عيب صناعة.</p>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>ساعتك تبدأ بمحادثة</h2>
+      <p>كلمنا على الواتساب ونحجز لك موعد التصميم.</p>
+      <a class="btn btn-gold" href="#design">صمّم ساعتك</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <b>معاليك</b>
+  <span class="en">MAALIK</span> · ساعات One of One · الكويت · <a href="https://wa.me/96599395020" target="_blank" rel="noopener">+965 9939 5020</a>
+</footer>
+
+<script>
+(function () {
+  var WA = '96599395020';
+  var AR = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+  function ar(n) { return String(n).replace(/\d/g, function (d) { return AR[d]; }); }
+
+  var SHAPES = [1, 2, 3, 4, 5];
+  var STRAPS = [
+    { id: 'steel', name: 'ستيل', sub: 'سوار معدني' },
+    { id: 'leather', name: 'جلد', sub: 'سير جلد طبيعي' },
+    { id: 'rubber', name: 'سيليكون', sub: 'مطاط فاخر' }
+  ];
+  var DIALS = [
+    { name: 'أسود', c: '#121212', t: '#E9E1CC' },
+    { name: 'أزرق ملكي', c: '#14306B', t: '#E9E1CC' },
+    { name: 'أخضر', c: '#173D2C', t: '#E9E1CC' },
+    { name: 'أبيض', c: '#F4F2EC', t: '#1B1B1B' },
+    { name: 'كريمي', c: '#EADFC2', t: '#2A2418' },
+    { name: 'رمادي', c: '#5D6064', t: '#F2F2F2' },
+    { name: 'عنابي', c: '#5A1622', t: '#F0E4D0' },
+    { name: 'شامبين', c: '#C9AE72', t: '#231C10' },
+    { name: 'فيروزي', c: '#2E8C8C', t: '#F4F2EC' }
+  ];
+  var S = { shape: 1, strap: 'steel', dial: 0 };
+
+  /* ---------- drawing ---------- */
+  var STEEL = '<linearGradient id="g-steel" x1="0" x2="1"><stop offset="0" stop-color="#6E7276"/><stop offset=".35" stop-color="#E4E6E8"/><stop offset=".55" stop-color="#A9ADB1"/><stop offset="1" stop-color="#5F6367"/></linearGradient>' +
+              '<linearGradient id="g-case" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F1F2F3"/><stop offset=".5" stop-color="#9DA1A5"/><stop offset="1" stop-color="#E2E4E6"/></linearGradient>' +
+              '<radialGradient id="g-dial" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset=".6" stop-color="#fff" stop-opacity="0"/></radialGradient>';
+
+  function strapSVG(kind, x, w, top, bottom, h) {
+    // top band from 0..top, bottom band from bottom..h
+    var out = '';
+    if (kind === 'steel') {
+      var seg = 22, y;
+      for (y = top - seg; y > -seg; y -= seg) out += link(y);
+      for (y = bottom; y < h; y += seg) out += link(y);
+      return out;
+    }
+    var fill = kind === 'leather' ? '#3B2418' : '#1B1B1D';
+    var edge = kind === 'leather' ? '#5B3A27' : '#2C2C30';
+    out += '<rect x="' + x + '" y="0" width="' + w + '" height="' + top + '" rx="6" fill="' + fill + '" stroke="' + edge + '"/>';
+    out += '<rect x="' + x + '" y="' + bottom + '" width="' + w + '" height="' + (h - bottom) + '" rx="6" fill="' + fill + '" stroke="' + edge + '"/>';
+    if (kind === 'leather') {
+      out += '<rect x="' + (x + 5) + '" y="-4" width="' + (w - 10) + '" height="' + (top) + '" rx="4" fill="none" stroke="#C9A84C" stroke-opacity=".55" stroke-dasharray="3 3"/>';
+      out += '<rect x="' + (x + 5) + '" y="' + (bottom + 4) + '" width="' + (w - 10) + '" height="' + (h - bottom) + '" rx="4" fill="none" stroke="#C9A84C" stroke-opacity=".55" stroke-dasharray="3 3"/>';
+    } else {
+      for (var i = 0; i < 4; i++) {
+        out += '<rect x="' + (x + w / 2 - 14) + '" y="' + (18 + i * 22) + '" width="28" height="6" rx="3" fill="#0E0E10"/>';
+        out += '<rect x="' + (x + w / 2 - 14) + '" y="' + (bottom + 24 + i * 22) + '" width="28" height="6" rx="3" fill="#0E0E10"/>';
+      }
+    }
+    return out;
+    function link(yy) {
+      var c = (w - 8) / 3;
+      return '<g><rect x="' + x + '" y="' + yy + '" width="' + c + '" height="20" rx="4" fill="url(#g-steel)"/>' +
+             '<rect x="' + (x + c + 4) + '" y="' + yy + '" width="' + c + '" height="20" rx="4" fill="url(#g-case)"/>' +
+             '<rect x="' + (x + 2 * c + 8) + '" y="' + yy + '" width="' + c + '" height="20" rx="4" fill="url(#g-steel)"/></g>';
+    }
+  }
+
+  function markers(cx, cy, r, color, style) {
+    var out = '';
+    for (var i = 0; i < 12; i++) {
+      var a = i * Math.PI / 6;
+      var x1 = cx + Math.sin(a) * r, y1 = cy - Math.cos(a) * r;
+      var len = i % 3 === 0 ? 12 : 7;
+      var x2 = cx + Math.sin(a) * (r - len), y2 = cy - Math.cos(a) * (r - len);
+      out += '<line x1="' + x1.toFixed(1) + '" y1="' + y1.toFixed(1) + '" x2="' + x2.toFixed(1) + '" y2="' + y2.toFixed(1) + '" stroke="' + color + '" stroke-width="' + (i % 3 === 0 ? 3.2 : 2) + '" stroke-linecap="round"/>';
+    }
+    return out;
+  }
+  function hands(cx, cy, len, color) {
+    return '<g stroke-linecap="round">' +
+      '<line x1="' + cx + '" y1="' + cy + '" x2="' + (cx - len * .38) + '" y2="' + (cy - len * .42) + '" stroke="' + color + '" stroke-width="4"/>' +
+      '<line x1="' + cx + '" y1="' + cy + '" x2="' + (cx + len * .62) + '" y2="' + (cy - len * .55) + '" stroke="' + color + '" stroke-width="3"/>' +
+      '<line x1="' + cx + '" y1="' + (cy + len * .18) + '" x2="' + cx + '" y2="' + (cy - len * .9) + '" stroke="#C9A84C" stroke-width="1.4"/>' +
+      '<circle cx="' + cx + '" cy="' + cy + '" r="3.6" fill="#C9A84C"/></g>';
+  }
+  function brandMark(cx, y, color) {
+    return '<text x="' + cx + '" y="' + y + '" text-anchor="middle" font-family="Cinzel, serif" font-size="7" letter-spacing="2" fill="' + color + '" opacity=".8">MAALIK</text>';
+  }
+
+  // each design returns {strapX, strapW, top, bottom, body}
+  function design(n, d) {
+    var cx = 120, cy = 200, t = d.t, c = d.c, b = '';
+    if (n === 1) { // round, fluted bezel, crown guard feel
+      b += '<rect x="78" y="120" width="84" height="160" rx="18" fill="url(#g-case)"/>';
+      b += '<circle cx="' + cx + '" cy="' + cy + '" r="66" fill="url(#g-case)"/>';
+      for (var i = 0; i < 60; i++) { var a = i * Math.PI / 30; b += '<line x1="' + (cx + Math.sin(a) * 63).toFixed(1) + '" y1="' + (cy - Math.cos(a) * 63).toFixed(1) + '" x2="' + (cx + Math.sin(a) * 55).toFixed(1) + '" y2="' + (cy - Math.cos(a) * 55).toFixed(1) + '" stroke="#7E8286" stroke-width="1.6"/>'; }
+      b += '<rect x="184" y="192" width="10" height="16" rx="3" fill="url(#g-steel)"/>';
+      b += '<circle cx="' + cx + '" cy="' + cy + '" r="52" fill="' + c + '"/><circle cx="' + cx + '" cy="' + cy + '" r="52" fill="url(#g-dial)"/>';
+      b += markers(cx, cy, 47, t) + brandMark(cx, cy - 20, t) + hands(cx, cy, 40, t);
+      return { x: 86, w: 68, top: 136, bottom: 264, body: b };
+    }
+    if (n === 2) { // square case with screwed bezel
+      b += '<rect x="58" y="138" width="124" height="124" rx="26" fill="url(#g-case)"/>';
+      b += '<rect x="70" y="150" width="100" height="100" rx="16" fill="#C9CCCF" stroke="#8D9195"/>';
+      var pts = [[78, 158], [120, 154], [162, 158], [166, 200], [162, 242], [120, 246], [78, 242], [74, 200]];
+      pts.forEach(function (p) { b += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="3.2" fill="#6A6E72"/><line x1="' + (p[0] - 2) + '" y1="' + p[1] + '" x2="' + (p[0] + 2) + '" y2="' + p[1] + '" stroke="#DADCDE" stroke-width="1"/>'; });
+      b += '<rect x="184" y="193" width="9" height="14" rx="3" fill="url(#g-steel)"/><circle cx="192" cy="200" r="3" fill="#2E4A8C"/>';
+      b += '<rect x="82" y="162" width="76" height="76" rx="8" fill="' + c + '"/><rect x="82" y="162" width="76" height="76" rx="8" fill="url(#g-dial)"/>';
+      b += markers(cx, cy, 34, t) + brandMark(cx, cy - 14, t) + hands(cx, cy, 30, t);
+      return { x: 84, w: 72, top: 140, bottom: 260, body: b };
+    }
+    if (n === 3) { // tall rectangle with side rails
+      b += '<rect x="80" y="122" width="80" height="156" rx="10" fill="url(#g-case)"/>';
+      b += '<rect x="80" y="122" width="12" height="156" rx="6" fill="url(#g-steel)"/><rect x="148" y="122" width="12" height="156" rx="6" fill="url(#g-steel)"/>';
+      b += '<rect x="160" y="192" width="9" height="16" rx="3" fill="url(#g-steel)"/><circle cx="168" cy="200" r="3" fill="#2E4A8C"/>';
+      b += '<rect x="96" y="136" width="48" height="128" rx="4" fill="' + c + '"/><rect x="96" y="136" width="48" height="128" rx="4" fill="url(#g-dial)"/>';
+      b += '<rect x="101" y="141" width="38" height="118" rx="2" fill="none" stroke="' + t + '" stroke-opacity=".5"/>';
+      b += '<line x1="120" y1="145" x2="120" y2="156" stroke="' + t + '" stroke-width="3"/><line x1="120" y1="244" x2="120" y2="255" stroke="' + t + '" stroke-width="3"/>';
+      b += '<line x1="105" y1="200" x2="112" y2="200" stroke="' + t + '" stroke-width="3"/><line x1="128" y1="200" x2="135" y2="200" stroke="' + t + '" stroke-width="3"/>';
+      b += brandMark(cx, 176, t) + hands(cx, cy, 30, t);
+      return { x: 90, w: 60, top: 124, bottom: 276, body: b };
+    }
+    if (n === 4) { // octagonal bezel, integrated bracelet, textured dial
+      b += '<path d="M64 168 Q64 138 94 134 L146 134 Q176 138 176 168 L176 232 Q176 262 146 266 L94 266 Q64 262 64 232 Z" fill="url(#g-case)"/>';
+      var oct = [];
+      for (var j = 0; j < 8; j++) { var aa = Math.PI / 8 + j * Math.PI / 4; oct.push((cx + Math.cos(aa) * 60).toFixed(1) + ',' + (cy + Math.sin(aa) * 60).toFixed(1)); }
+      b += '<polygon points="' + oct.join(' ') + '" fill="#D4D7DA" stroke="#8D9195" stroke-width="1.5"/>';
+      for (var m = 0; m < 8; m++) { var am = Math.PI / 8 + m * Math.PI / 4; var sx = cx + Math.cos(am) * 53, sy = cy + Math.sin(am) * 53; b += '<polygon points="' + hex(sx, sy, 3.6) + '" fill="#7C8084"/>'; }
+      b += '<rect x="176" y="194" width="9" height="12" rx="3" fill="url(#g-steel)"/>';
+      b += '<circle cx="' + cx + '" cy="' + cy + '" r="44" fill="' + c + '"/>';
+      b += '<defs><pattern id="tap" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="' + c + '"/><rect x="1" y="1" width="4" height="4" fill="#000" fill-opacity=".22"/></pattern></defs>';
+      b += '<circle cx="' + cx + '" cy="' + cy + '" r="44" fill="url(#tap)"/><circle cx="' + cx + '" cy="' + cy + '" r="44" fill="url(#g-dial)"/>';
+      b += markers(cx, cy, 40, t) + brandMark(cx, cy - 16, t) + hands(cx, cy, 34, t);
+      return { x: 72, w: 96, top: 140, bottom: 260, body: b };
+    }
+    // 5: classic thin round
+    b += '<rect x="90" y="134" width="60" height="132" rx="10" fill="url(#g-case)"/>';
+    b += '<circle cx="' + cx + '" cy="' + cy + '" r="62" fill="url(#g-case)"/>';
+    b += '<rect x="180" y="193" width="10" height="14" rx="5" fill="url(#g-steel)"/>';
+    b += '<circle cx="' + cx + '" cy="' + cy + '" r="57" fill="' + c + '"/><circle cx="' + cx + '" cy="' + cy + '" r="57" fill="url(#g-dial)"/>';
+    b += '<circle cx="' + cx + '" cy="' + cy + '" r="50" fill="none" stroke="' + t + '" stroke-opacity=".35"/>';
+    for (var q = 0; q < 12; q++) { var aq = q * Math.PI / 6; b += '<circle cx="' + (cx + Math.sin(aq) * 44).toFixed(1) + '" cy="' + (cy - Math.cos(aq) * 44).toFixed(1) + '" r="' + (q % 3 === 0 ? 2.6 : 1.6) + '" fill="' + t + '"/>'; }
+    b += brandMark(cx, cy - 20, t) + hands(cx, cy, 40, t);
+    return { x: 94, w: 52, top: 140, bottom: 260, body: b };
+    function hex(x, y, r) { var p = []; for (var i2 = 0; i2 < 6; i2++) { var a2 = i2 * Math.PI / 3; p.push((x + Math.cos(a2) * r).toFixed(1) + ',' + (y + Math.sin(a2) * r).toFixed(1)); } return p.join(' '); }
+  }
+
+  function watchSVG(shape, strap, dial, H) {
+    var d = design(shape, dial);
+    return '<defs>' + STEEL + '</defs>' + strapSVG(strap, d.x, d.w, d.top, d.bottom, H) + d.body;
+  }
+
+  /* ---------- UI ---------- */
+  var $ = function (id) { return document.getElementById(id); };
+  var shapesEl = $('shapes'), strapsEl = $('straps'), dialsEl = $('dials');
+
+  SHAPES.forEach(function (n) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'opt'; b.dataset.v = n;
+    b.innerHTML = '<svg viewBox="40 110 160 180" aria-hidden="true">' + watchSVG(n, 'leather', { c: '#1A1815', t: '#C9A84C' }, 400) + '</svg><span>تصميم ' + ar(n) + '</span>';
+    b.addEventListener('click', function () { S.shape = n; render(); });
+    shapesEl.appendChild(b);
+  });
+  STRAPS.forEach(function (s) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'opt strap'; b.dataset.v = s.id;
+    b.innerHTML = '<span>' + s.name + '</span><small>' + s.sub + '</small>';
+    b.addEventListener('click', function () { S.strap = s.id; render(); });
+    strapsEl.appendChild(b);
+  });
+  DIALS.forEach(function (d, i) {
+    var b = document.createElement('button');
+    b.type = 'button'; b.style.background = d.c; b.setAttribute('aria-label', d.name); b.title = d.name; b.dataset.v = i;
+    b.addEventListener('click', function () { S.dial = i; render(); });
+    dialsEl.appendChild(b);
+  });
+
+  function strapName() { for (var i = 0; i < STRAPS.length; i++) if (STRAPS[i].id === S.strap) return STRAPS[i].name; }
+  function render() {
+    $('preview').innerHTML = watchSVG(S.shape, S.strap, DIALS[S.dial], 400);
+    [].forEach.call(shapesEl.children, function (b) { b.setAttribute('aria-pressed', String(+b.dataset.v === S.shape)); });
+    [].forEach.call(strapsEl.children, function (b) { b.setAttribute('aria-pressed', String(b.dataset.v === S.strap)); });
+    [].forEach.call(dialsEl.children, function (b) { b.setAttribute('aria-pressed', String(+b.dataset.v === S.dial)); });
+    $('dialName').textContent = DIALS[S.dial].name;
+    $('sum').innerHTML = '<b>تصميم ' + ar(S.shape) + '</b> · سوار ' + strapName() + ' · مينا ' + DIALS[S.dial].name;
+  }
+
+  $('bookBtn').addEventListener('click', function () {
+    var name = $('nm').value.trim(), idea = $('idea').value.trim();
+    var m = 'مرحبا، أبي أحجز موعد تصميم مع معاليك' + (name ? ' — ' + name : '') + '\n' +
+            '• التصميم: تصميم ' + ar(S.shape) + '\n' +
+            '• السوار: ' + strapName() + '\n' +
+            '• لون المينا: ' + DIALS[S.dial].name + '\n' +
+            (idea ? '• الفكرة: ' + idea + '\n' : '') +
+            'متى يناسبكم الموعد؟';
+    window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(m), '_blank');
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
